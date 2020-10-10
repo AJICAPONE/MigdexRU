@@ -1,0 +1,32 @@
+#popup-obr.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.w-830(role='document')
+        .modal-content.p-30
+            .popup-close--wrap
+            .popup-header
+                .popup-title.text-left.w-100.fs-21 Создание обращения (Шаг 1)
+
+
+            .popup-body
+                .migdex-popup-input
+                    label Загаловок:
+                    input.migdex-input--wave.h-47(type="text" placeholder="Укажите заголовок обращения")
+                .migdex-lk-settings-dot--item2
+                    label.basket-content-top-dot__item2
+                        input.basket-input-item(type="radio" name="popup_obr")
+                    .migdex-lk-settings-dot--text Не могу оформить заказ
+                .migdex-lk-settings-dot--item2
+                    label.basket-content-top-dot__item2
+                        input.basket-input-item(type="radio" name="popup_obr")
+                    .migdex-lk-settings-dot--text Не работает форма обратной связи
+                .migdex-lk-settings-dot--item2
+                    label.basket-content-top-dot__item2
+                        input.basket-input-item(type="radio" name="popup_obr")
+                    .migdex-lk-settings-dot--text Не приходит код для подтверждения
+                .migdex-lk-settings-dot--item2
+                    label.basket-content-top-dot__item2
+                        input.basket-input-item(type="radio" name="popup_obr")
+                    .migdex-lk-settings-dot--text Другое
+            .popup-footer.mt-40
+                .migdex-lk-popup-buttons
+                    .migdex-lk-popup-button(data-dismiss="modal") Отмена
+                    .migdex-lk-popup-button-g(data-dismiss="modal" data-toggle="modal" data-target="#popup-obr2") Далее

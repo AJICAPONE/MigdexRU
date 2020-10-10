@@ -1,0 +1,23 @@
+#popup-obr2.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.w-830(role='document')
+        .modal-content.p-30
+            .popup-close--wrap
+            .popup-header
+                .popup-title.text-left.w-100.fs-21 Создание обращения (Шаг 2)
+
+
+            .popup-body
+                .migdex-popup-input
+                    label Опишите проблему:
+                    textarea.migdex-textarea(cols="5" rows="6" placeholder="Подробно опишите возникшую проблему...")
+                .migdex-added-files--wrap
+                    .migdex-add-file
+                        .migdex-add-file--icon
+                            +icon('paperclip')
+                        .migdex-add-file--name Добавить файл
+                        input(type="file" multiple)
+                .popup-load--file--wrap
+            .popup-footer.mt-40
+                .migdex-lk-popup-buttons
+                    .migdex-lk-popup-button(data-dismiss="modal") Отмена
+                    .migdex-lk-popup-button-g Далее
