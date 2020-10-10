@@ -7,11 +7,142 @@ section.section1.p-60-0.pt-2
 
 
                 .col-xl-9.col-lg-9.col-md-6.col-sm-12.migdex-lk-content.pr-0
-                    .migdex-lk-content--box.blue-box
-                        .migdex-lk-content--box__section
-                            .migdex-lk-content--title.mb-1 Подписки
-                            .migdex-lk-content--desc.mb-30 Получайте свежие акции, уникальные промокоды и новости!
-                            .col-xl-6.col-lg-6.col-md-6.col-sm-12.migdex-popup-input--col.p-0.mb-30
+                    .migdex-lk-content--box__v2.blue-box.mb-30
+                        .migdex-lk-content--box__top
+                            .migdex-lk-content--box__top--title Фильтр
+                            .migdex-lk-content--box__top--arrow
+                                +icon('arrow-down')
+                        .migdex-lk-content--box__bottom
+                            .col-xl-6.col-lg-6.col-md-6.col-sm-12.migdex-popup-input--col
                                 .migdex-popup-input
-                                    input.migdex-input--wave.h-47.pr-120(type="email" placeholder="Email")
-                                    button.migdex-lk-content-submit(type="submit") Подписаться
+                                    label Номер:
+                                    input.migdex-input--v2.h-47(type="text" placeholder="Номер...")
+                            .col-xl-6.col-lg-6.col-md-6.col-sm-12.migdex-popup-input--col.mb-20
+                                .migdex-popup-input
+                                    label Статус:
+                                    .migdex-popup-input--flex
+                                        .migdex-input--div.migdex-input--v2.h-47
+                                            span.migdex-input--div__span Все
+                                        .migdex-input-list--icon
+                                            +icon('arrow-down')
+                                        ul.migdex-input-list--wrap
+                                            li.migdex-input-item--input Все1
+                                            li.migdex-input-item--input Все2
+                                            li.migdex-input-item--input Все3
+                            .col-xl-4.col-lg-4.col-md-4.col-sm-12.migdex-popup-input--col
+                                .migdex-popup-input
+                                    label Интервал:
+                                    .migdex-popup-input--flex
+                                        .migdex-input--div.migdex-input--v2.h-47
+                                            span.migdex-input--div__span День
+                                        .migdex-input-list--icon
+                                            +icon('arrow-down')
+                                        ul.migdex-input-list--wrap
+                                            li.migdex-input-item--input.calendar-destroy День
+                                            li.migdex-input-item--input.calendar-destroy Месяц
+                                            li.migdex-input-item--input.calendar-destroy Год
+
+                            .migdex-popup-input--col.w-66.p-0-15px
+                                label Дата:
+                                .migdex-popup-input-cols--flex
+                                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.migdex-popup-input.mb-0
+                                        input.migdex-input--v2.h-47.date-start(type="text" placeholder="__.__.____")
+                                        .migdex-popup-input__icon
+                                            +icon('calendar')
+                                    .migdex-tire -
+                                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.migdex-popup-input.mb-0
+                                        input.migdex-input--v2.h-47.date-end(type="text" placeholder="__.__.____")
+                                        .migdex-popup-input__icon
+                                            +icon('calendar')
+                    .migdex-button-block.mb-30 Добавить обращение
+                    .migdex-lk-content--box__v2.blue-box
+                        .migdex-lk-content--box__top
+                            .migdex-lk-content--box__top--title Запрос в техподдержку
+                            .migdex-lk-content--box__top--tabs
+                                .migdex-lk-content--top--tab.active(data-tab="migdex-lk-active") Активные
+                                .migdex-lk-content--top--tab(data-tab="migdex-lk-archive") Архив
+                        .migdex-lk-content--box__bottom2
+                            .migdex-lk-content--box__bottom--tab.migdex-lk-active.active
+                                table.migdex-table
+                                    thead
+                                        tr
+                                            th Название
+                                            th Дата
+                                            th Статус
+                                    tbody
+                                        tr
+                                            td
+                                                .migdex-lk-table--block
+                                                    .migdex-lk-table--block__text Запрос №1 “Не работает форма связи”
+                                                    .migdex-lk-table--block__number 2
+                                            td 15.03.2020  12:46
+                                            td Ожидается ответ от поддержки
+                                        tr
+                                            td
+                                                .migdex-lk-table--block
+                                                    .migdex-lk-table--block__text Запрос №2 “Не работает форма связи”
+                                                    .migdex-lk-table--block__number 4
+                                            td 15.03.2020  12:46
+                                            td Ожидается ответ от поддержки
+
+
+                            .migdex-lk-content--box__bottom--tab.migdex-lk-archive
+                                table.migdex-table
+                                    thead
+                                        tr
+                                            th Название
+                                            th Дата
+                                            th Статус
+                                    tbody
+                                        tr
+                                            td
+                                                .migdex-lk-table--block
+                                                    .migdex-lk-table--block__text Запрос №1 “Не работает форма связи”
+                                            td 15.03.2020  12:46
+                                            td Закрыт
+                                        tr
+                                            td
+                                                .migdex-lk-table--block
+                                                    .migdex-lk-table--block__text Запрос №2 “Не работает форма связи”
+                                            td 15.03.2020  12:46
+                                            td Закрыт
+                                        tr
+                                            td
+                                                .migdex-lk-table--block
+                                                    .migdex-lk-table--block__text Запрос №1 “Не работает форма связи”
+                                            td 15.03.2020  12:46
+                                            td Закрыт
+                                        tr
+                                            td
+                                                .migdex-lk-table--block
+                                                    .migdex-lk-table--block__text Запрос №2 “Не работает форма связи”
+                                            td 15.03.2020  12:46
+                                            td Закрыт
+                                        tr
+                                            td
+                                                .migdex-lk-table--block
+                                                    .migdex-lk-table--block__text Запрос №1 “Не работает форма связи”
+                                            td 15.03.2020  12:46
+                                            td Закрыт
+                                        tr
+                                            td
+                                                .migdex-lk-table--block
+                                                    .migdex-lk-table--block__text Запрос №2 “Не работает форма связи”
+                                            td 15.03.2020  12:46
+                                            td Закрыт
+                                        tr
+                                            td
+                                                .migdex-lk-table--block
+                                                    .migdex-lk-table--block__text Запрос №1 “Не работает форма связи”
+                                            td 15.03.2020  12:46
+                                            td Закрыт
+                                        tr
+                                            td
+                                                .migdex-lk-table--block
+                                                    .migdex-lk-table--block__text Запрос №2 “Не работает форма связи”
+                                            td 15.03.2020  12:46
+                                            td Закрыт
+                                .migdex-table-load-more Показать еще
+
+
+
