@@ -1,0 +1,1856 @@
+.section-main-page
+  width: 100%;
+  height: 100vh;
+.slide-main-page
+  display flex !important
+  justify-content center
+  align-items center
+  background-repeat no-repeat
+  background-size cover
+  width: 100%;
+  height: 100vh
+  background-position: center;
+  outline none
+.js-slider-dots--wrap
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 25px;
+  width: 100%;
+  height: 30px;
+  pointer-events: none;
+  ul
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width 100%
+    li
+      size(21px)
+      min-width 21px
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1.5px solid transparent;
+      border-radius: 50%;
+      transition: all linear 0.2s;
+      margin 0 5px
+      cursor: pointer;
+      pointer-events: auto;
+      a
+        display flex
+        justify-content center
+        align-items center
+        size(11.5px)
+        min-width 11.5px
+        //background: linear-gradient(135deg, #f37335, #fdc830);
+        background rgba(255,255,255,0.5)
+        transition: all linear 0.4s;
+        position: absolute;
+        //box-shadow: 0 -3px rgba(255,255,255,0) inset, 0 0 15px rgba(253,200,48,0.53);
+        border-radius 50%
+    li.slick-active
+      background-color: transparent;
+      border: 1.8px solid #f58434;
+      border-radius: 50%;
+      a
+        background: linear-gradient(135deg, #f37335, #fdc830);
+.slide-main--title
+  font-family Ow600
+  font-size 54px
+  color #fff
+  margin-bottom 60px
+.section-title
+  font-family Ow600
+  font-size 35px
+  color #fff
+  text-align center
+  margin-bottom 15px
+.section-desc
+  font-family Os400
+  font-size 17px
+  color #A1A2A9
+  text-align center
+  width 100%
+  max-width 800px
+  margin 0 auto
+.p-60-0
+  padding 60px 0
+.blue-box
+  background-color #2B2F3F
+.section-services-block
+  display flex
+  flex-direction column
+  padding 30px
+  border-radius 5px
+.section-services-top
+  display flex
+  align-items center
+  margin-bottom 30px
+.section-services-img
+  size(80px)
+  margin-right 30px
+.section-services-title
+  font-family Ow600
+  font-size 25px
+  color #fff
+.section-services-text
+  font-family Os400
+  font-size 15px
+  color #AAACB2
+  margin-bottom 20px
+.section-services-anno
+  font-family Os400
+  font-size 15px
+  color #fff
+.section-services-col
+  display flex
+  margin-bottom 30px
+.section-wave
+  position relative
+  background-color #1F2334
+  width 100%
+
+
+  &:before
+    content ''
+    clip-path Poligon
+    //background-image url("/static/img/content/svg/wave.png")
+    background-repeat repeat-x
+    background-size cover
+    //display flex
+    position absolute
+    left 0
+    right 0
+    top -79px
+    width 100%
+    height 80px
+    background-color #1F2334
+    //animation: wave 3s linear infinite;
+    //animation-iteration-count infinite
+  &:after
+    content ''
+    clip-path Poligon
+    position absolute
+    left 0
+    right 0
+    bottom -79px
+    width 100%
+    height 80px
+    background-color #1F2334
+    transform rotate(180deg)
+//@keyframes wave
+//  from
+//    background-position 0%
+//  to
+//    background-position 100%
+
+
+.mb-120
+  margin-bottom 120px
+.mb-25
+  margin-bottom 25px
+.section-wave--content
+  display flex
+  align-items center
+  justify-content space-between
+.wave-slide--item
+  width 470px
+  outline none
+  margin 25px 10px
+.section-wave--left,.section-wave--right
+  position relative
+  width 48%
+.slider-wave--title__wrap
+  display flex
+  align-items center
+  justify-content space-between
+  margin-bottom 30px
+.slider-wave--title
+  font-family Ow600
+  font-size 30px
+  color #fff
+.slider-wave--count
+  font-family Ow500
+  font-size 30px
+  color #fff
+
+  span
+    font-size 23px
+    font-family Ow500
+    color #fff
+    margin 0 10px
+    &:last-child
+      margin-right 0
+      color #AAACB2
+      font-size 18px
+      margin-left 0
+.slider-wave--desc
+  font-family Os400
+  font-size 15px
+  color #A5A7AE
+  margin-bottom 50px
+.slider-wave-slide--items
+  display flex
+  justify-content space-between
+.slider-wave-slide--wrap
+  display flex
+  justify-content center
+  align-items center
+  flex-direction column
+.slider-wave-slide--item
+  display flex
+  justify-content center
+  align-items center
+  size(80px)
+  background-color #404452
+  box-shadow 0 0 0 10px rgba(255, 255, 255, 0.05)
+  border-radius 50%
+  margin-bottom 25px
+.slider-wave-slide--img
+  size(46px)
+.slider-wave-slide--item__text
+  font-family Os600
+  font-size 14px
+  color #fff
+  text-align center
+.section-wave--slider__for__item
+  outline none
+.wave-arrows
+  display flex
+  align-items center
+  justify-content flex-end
+.wave-slider--prev,.wave-slider--next,.wave-slider--prev2,.wave-slider--next2
+  cursor pointer
+  .icon
+    size(30px)
+    fill #fff
+.wave-slider--prev,.wave-slider--prev2
+  margin-bottom 10px
+.wave-slider--next.wave-slider--next2
+  margin-top 10px
+.wave-slider--line
+  .icon
+    size(30px)
+    fill #fff
+    transform rotate(-45deg)
+.js-section-wave--slider
+  margin-bottom 20px
+.wave-slider--prev.slick-disabled,.wave-slider--next.slick-disabled,.wave-slider--prev2.slick-disabled,.wave-slider--next2.slick-disabled
+  opacity 0.3
+.section-why-desc
+  font-family Ow500
+  font-size 17px
+  color #fff
+  text-align center
+.section-why--img
+  display flex
+  justify-content center
+  align-items center
+  margin 0 auto
+  size(60px)
+  margin-bottom 17px
+.section-why-block
+  width 100%
+  border-radius 5px
+  padding 30px
+.section-why-col
+  display flex
+  margin-bottom 30px
+.w-230
+  width 100%
+  max-width 230px
+.m-0-auto
+  margin 0 auto
+.section-why-choise
+  margin-bottom 30px
+
+.section-works-img
+  display flex
+  justify-content center
+  align-items center
+  background-size cover
+  background-position center
+  width: 100%;
+  height: 258px;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  cursor pointer
+  padding 30px
+  position relative
+  &:hover
+
+    &:before
+      content ''
+      position absolute
+      display block
+      right 0
+      left 0
+      bottom 0
+      top 0
+      border-radius 5px
+      transition all linear .2s
+      background: rgba(43, 47, 63, 0.3);
+      backdrop-filter: blur(12px);
+
+
+    .section-works--content
+      opacity 1
+      pointer-events auto
+
+.section-works--content
+  display flex
+  opacity 0
+  pointer-events none
+  flex-direction column
+  justify-content center
+  align-items center
+  transition all linear .2s
+  z-index 2
+
+  p
+    margin-bottom 60px
+    font-family Os600
+    font-size 20px
+    color #fff
+.section-works-col
+  margin-bottom 30px
+.section-works
+  margin-bottom 30px
+.slider-wave-slide--price
+  font-family Ow600
+  font-size 30px
+  color #fff
+.wave-arrows
+  position: absolute;
+  bottom: 0;
+  right: 0;
+.how-job-img
+  size(54px)
+  margin-right 20px
+.how-job--item
+  display flex
+  flex-direction column
+  align-items center
+  padding 20px
+  box-shadow: 0px 0px 10px rgba(19, 23, 41, 0.8);
+  border-radius: 5px;
+.how-job--title
+  font-family Ow600
+  font-size 16px
+  color #fff
+.how-job--text
+  font-family Os400
+  font-size 13px
+  color #AAACB2
+.how-job--top
+  display flex
+  align-items center
+  justify-content space-between
+  margin-bottom 30px
+  width 100%
+.how-job--col
+  display flex
+.how-job-video--link
+  position relative
+.how-job-video--wrap
+  padding 15px
+  border-radius 5px
+.how-job-video--img
+  width 100%
+  height 100%
+.section-how-job
+  margin-bottom 100px
+.how-job-video
+  margin 0 auto
+.how-job-video--icon
+  absolute-center()
+  display flex
+  justify-content center
+  align-items center
+  size(74px)
+  border-radius 50%
+  background: linear-gradient(92.29deg, rgba(243, 117, 53, 0.8) 0%, rgba(253, 198, 48, 0.8) 100%);
+  box-shadow 0 0 0 8px rgba(236, 149, 56,0.5)
+  animation pulser2 1s infinite
+  animation-iteration-count infinite
+  animation-direction: alternate;
+  .icon
+    fill transparent
+    stroke #fff
+    size(23px)
+    stroke-width 2px
+  &:before
+    content ''
+    absolute-center()
+    size(120px)
+    border-radius 50%
+    border 2px solid rgba(236, 149, 56,0.5)
+    animation pulser 1s infinite
+    animation-iteration-count infinite
+    animation-direction: alternate;
+    z-index -1
+@keyframes pulser
+  0%
+    size(120px)
+  100%
+    size(76px)
+
+@keyframes pulser2
+  0%
+    box-shadow 0 0 0 8px rgba(236, 149, 56,0.5)
+  100%
+    box-shadow 0 0 0 0px rgba(236, 149, 56,0.5)
+
+
+.slider-wave-input-wrapper
+  display flex
+  justify-content space-between
+  align-items center
+.migdex-input--wave
+  background-color rgba(255, 255, 255, 0.1)
+  border-radius 5px
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  padding 20px 12px
+  font-family Os600
+  font-size 14px
+  color rgba(255, 255, 255, 0.6)
+  height 60px
+  width 100%
+.mr-30
+  margin-right 30px
+.mb-70
+  margin-bottom 70px
+.w-210
+  width 210px
+.mb-40
+  margin-bottom 40px !important
+
+
+  // Video SLIDER
+// video slider
+.index-video
+  padding 60px 0
+  overflow hidden
+.index-video-title--link__wrap
+  display flex
+  justify-content center
+  align-items center
+  position relative
+  margin-bottom 40px
+
+.index-video-review__link
+  position absolute
+  right 0
+  font-family "Open Sans SB",sans-serif
+  font-size 16px
+  color #F37535;
+  border-bottom 1.2px dotted #F37535;
+
+  &:hover
+    text-decoration none
+    border-bottom 1.2px dotted #fdc630;
+
+.index-video-title
+  margin-bottom 0
+
+
+
+
+
+
+
+
+.index-video-slider .slick-list {
+  padding-top: 6%!important;
+  padding-bottom: 6%!important;
+  padding-left: 15%!important;
+  padding-right: 15%!important;
+}
+
+.index-video-slider-dots--wrap .slick-dots {
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.index-video-slider .slick-track {
+  max-width: 100%!important;
+  transform: translate3d(0, 0, 0)!important;
+  perspective: 100px;
+}
+
+.index-video-slider-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 0;
+  width: 100%!important;
+  transform: translate3d(0, 0, 0);
+  transition: transform 1s, opacity 1s;
+  outline none
+  cursor pointer
+}
+
+.slick-snext,
+.slick-sprev {
+  display: block;
+}
+
+.index-video-slider .slick-current {
+  opacity: 1;
+  position: relative;
+  display: block;
+  //transform: translate3d(0, 0, 12px);
+  transform scale(1.12)
+  z-index: 2;
+}
+
+.slick-snext {
+  opacity: 1;
+  transform: translate3d(28.8%, 0, 0px);
+  z-index: 1;
+}
+
+.slick-sprev {
+  opacity: 1;
+  transform: translate3d(-28.8%, 0, 0px);
+}
+.index-video-slider-source
+  display: block;
+  width: 70%
+  margin 0 auto
+  height: 340px;
+  border 10px solid #2B2F3F
+  background-color #2B2F3F
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-size cover
+  background-position center
+  background-repeat no-repeat
+  outline none
+  position relative
+
+.index-video-slider .slick-list
+  margin 0 -45px
+.preload
+  background-size cover
+  position: absolute;
+  display: flex;
+  justify-content center
+  align-items center
+  width: 83.5%;
+  margin: 0 auto;
+  height: 365px;
+  top: 8px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index 2
+
+.icon-preload
+  absolute-center()
+  display flex
+  justify-content center
+  align-items center
+  size(100%)
+  &:after
+    content ''
+    position absolute
+    display flex
+    justify-content center
+    align-items center
+    background: linear-gradient(92.29deg, #F37535 0%, #FDC630 100%);
+    opacity 0.6
+    size(60px)
+    border-radius 50%
+    box-shadow 0 0 0 5px rgba(226, 144, 61, 0.5)
+
+
+
+  .icon
+    size(21px)
+    opacity 1
+    z-index 2
+    stroke: #fff;
+    fill: transparent;
+    stroke-width: 2px;
+    stroke-linecap: round;
+
+
+.index-video-slider--wrapper
+  position relative
+
+.index-video-slider__controls
+  display flex
+  justify-content space-between
+  absolute-center()
+  width 100%
+
+.index-video-slider__controls
+  pointer-events none
+
+.index-video--controls
+  position relative
+  background: rgba(43, 47, 63, 0.4);
+  backdrop-filter: blur(4px);
+  size(50px)
+  border-radius 50%
+  pointer-events auto
+  cursor pointer
+
+  .icon
+    absolute-center()
+    size(16px)
+    fill #fff
+    transition all linear .1s
+
+  &:hover
+    .icon
+      fill #F89D32
+
+.index-video-slider-dots--wrap
+  display flex
+  width 100%
+  justify-content center
+  align-items center
+
+  ul
+    display flex
+    justify-content center
+
+  li
+    margin-right 20px
+    cursor pointer
+    &:last-child
+      margin-right 0
+
+.index-video-slider__dots
+  background-color rgba(40, 48, 55, 0.6)
+  size(8px)
+  border-radius 50%
+  display block
+  position relative
+
+li.slick-active .index-video-slider__dots
+  background-color: #283037
+  transition all linear .4s
+  transform scale(1.3)
+
+.video-title
+  margin-bottom 10px
+.reveiw-tab-video
+  margin-top: -90px
+.index-video-slider-arrow
+  absolute-center()
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width 100%
+  pointer-events: none
+.index-video-slider--prev,.index-video-slider--next
+  display flex !important
+  justify-content: center
+  align-items: center
+  size(44px)
+  background-color: #2B2F3F
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 50%
+  cursor pointer
+  pointer-events: auto
+  .icon
+    size(18px)
+.index-video-slider--prev .icon
+  transform rotate(180deg)
+.index-video-slider--prev
+  margin-left: -80px
+.index-video-slider--next
+  margin-right: -80px
+.index-video-slider--wrapper--mobile
+  display none
+.index-video-slider-item-mobile
+  position: relative;
+  margin: 0 60px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 40px rgba(0,0,0,.2);
+  box-shadow: 0 0 40px rgba(0,0,0,.2);
+.index-video-slider-source-mobile
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+// END
+.section-migdex-wrap2
+  display flex
+  justify-content center
+  align-items center
+  position: relative;
+  margin-bottom 70px
+.section-review-all
+  absolute-center()
+  transform: translate(0%, -50%);
+  left auto
+  right 0
+  color #F37535
+  font-family Os600
+  font-size 17px
+  border-bottom 1px dashed #F37535
+.section-rev--item
+  padding 20px
+  border-radius 5px
+  margin-bottom 10px
+  position relative
+  overflow hidden
+
+  &:before
+    content ''
+    position absolute
+    width 245px
+    height 45px
+    background: linear-gradient(315deg, #FDC830 0%, #F37335 100%);
+    opacity 0.3
+    clip-path PoligonMV1
+    right -10px
+    bottom -10px
+    z-index 0
+    animation wave1 2.4s ease-in-out infinite
+    animation-iteration-count infinite
+    animation-direction alternate-reverse
+
+  &:after
+    content ''
+    position absolute
+    width 230px
+    height 45px
+    background: linear-gradient(315deg, #FDC830 0%, #F37335 100%);
+    opacity 0.3
+    clip-path PoligonMV1
+    right -20px
+    bottom -10px
+    z-index 0
+    animation wave2 2s ease-in-out infinite
+    animation-iteration-count infinite
+    animation-direction alternate
+  //.section-rev-col
+  //  &:nth-child(2n)
+  //    .section-rev--item
+  //      &:before
+  //        animation wave1 2.6s ease-in-out infinite !important
+  //      &:after
+  //        animation wave2 1s ease-in-out infinite !important
+@keyframes wave1
+  0%
+    transform translate(0px,-7px)
+  100%
+    transform translate(20px,10px)
+@keyframes wave2
+  0%
+    transform translate(-4px,-7px)
+  100%
+    transform translate(50px,10px)
+.section-rev--top
+  display flex
+  align-items center
+  margin-bottom 20px
+.section-rev--left
+  margin-right 20px
+.section-rev--img
+  size(60px)
+  background-size cover
+  background-position center
+  border-radius 50%
+.section-rev--right
+  width 100%
+.section-rev--title
+  font-family Ow500
+  color #fff
+  font-size 19px
+  margin-bottom 7px
+.section-rev--desc
+  font-family Os400
+  font-size 14px
+  color rgba(255, 255, 255,0.6)
+.section-rev--bottom
+  font-family Os400
+  font-size 15px
+  color rgba(255, 255, 255,0.6)
+  margin-bottom 40px
+.mb-40
+  margin-bottom 40px
+.section-rev-col
+  display flex
+  flex-direction column
+  align-items center
+.section-rev--link
+  font-family Os400
+  color #F37335
+  font-size 15px
+  border-bottom 1px dashed #F37335
+  width max-content
+.section-blog--item__img
+  position relative
+  background-size cover
+  background-repeat no-repeat
+  height 280px
+  width 100%
+  margin-bottom 15px
+.section-blog--item
+  padding 15px
+  border-radius 5px
+.section-blog-col
+
+  &:hover
+    .section-blog--item__title
+      color #f38135
+.section-blog--item__title
+  font-family Ow600
+  font-size 17px
+  color #fff
+  margin-bottom 40px
+  transition all linear .2s
+.section-blog--item__date
+  font-family Os400
+  font-size 15px
+  color #AAACB2
+.section-blog-block
+  margin-bottom 60px
+#map
+  height 500px
+.section-map-sub
+  width 100%
+  margin 0 auto
+  max-width 630px
+  border-radius 15px
+  padding 40px 100px
+  box-shadow: 0px 0px 20px rgba(19, 23, 41, 0.6);
+.section-map-plane
+  display flex
+  position relative
+  .icon
+    size(30px)
+.map-plane-email
+  absolute-center()
+  left 0px
+  transform: translate(0%, -50%);
+  .icon
+    fill #fff
+.sub-map-plane
+  background-color transparent
+  border none
+  border-bottom 2.5px solid rgba(255, 255, 255,0.1)
+  color rgba(255, 255, 255,0.6)
+  padding 14px 0
+  padding-left 40px
+  font-family Os400
+  font-size 15px
+.sub-maop-send
+  absolute-center()
+  left auto
+  right 0px
+  transform: translate(0%, -50%);
+
+  background-color transparent
+  border none
+  outline none
+  &:focus
+    outline none
+.map-title
+  font-family Ow600
+  font-size 25px
+  color #fff
+  margin-bottom 5px
+  text-align center
+.map-desc
+  text-align center
+  font-family Os400
+  font-size 15px
+  color rgba(255, 255, 255, 0.6)
+  margin-bottom 50px
+.section-migdex-wrap
+  position relative
+.section-map-sub
+  absolute-center()
+  top 0
+  z-index 1
+.pt-200
+  padding-top 200px
+.sub-map-plane
+  width 100%
+.breadcrumb-list
+  display flex
+  align-items center
+.header-relative
+  header
+    position relative
+    background-color #2B2F3F
+  .header-menu--wrapper
+    background-color #363949
+.breadcrumb
+  background-color transparent
+.breadcrumb-item
+  font-family Os400
+  font-size 14px
+  color #A1A2A9
+.mb-60
+  margin-bottom 60px !important
+.mb-50
+  margin-bottom 50px !important
+.section-migdex-tabs
+  display flex
+  align-items center
+  justify-content center
+  margin-bottom 40px
+.section-migdex-tab
+  display flex
+  justify-content center
+  align-items center
+  background-color #2B2F3F
+  border-radius 5px
+  font-family Ow400
+  font-size 14px
+  color #AAACB2
+  margin-right 30px
+  height 47px
+  padding 15px 25px
+  width 180px
+  cursor pointer
+  transition all .2s linear
+  &:last-child
+    margin-right 0
+.section-migdex-tab.active
+  background: linear-gradient(92.29deg, #F37535 0%, #FDC630 100%);
+  color #fff
+  box-shadow 0 0 13px 2px rgba(250, 174, 50,0.5)
+.section-migdex-content--img
+  position relative
+  background-repeat no-repeat
+  background-size cover
+  width 100%
+  height 260px
+  min-height 260px
+  background-position center
+  border-radius 5px 5px 0 0
+.section-migdex-content--item
+  display flex
+  flex-direction column
+  border-radius 5px
+  width 100%
+.section-migdex-content--info
+  display flex
+  flex-direction column
+  justify-content space-between
+  height 100%
+  padding 15px
+.section-migdex-content--title
+  font-family Ow600
+  font-size 17px
+  color #fff
+  margin-bottom 15px
+.section-migdex-content--text
+  font-family Os400
+  font-size 13px
+  color #AAACB2
+  margin-bottom 25px
+.section-migdex-content--price-more
+  display flex
+  align-items center
+  justify-content space-between
+.section-migdex-content--price
+  font-family Ow600
+  font-size 17px
+  color #fff
+.w-120
+  width: 120px;
+.section-migdex-content--eye
+  display flex
+  justify-content center
+  align-items center
+  size(41px)
+  border-radius 5px
+  margin-right 15px
+  background-color #363949
+  cursor pointer
+
+  .icon
+    size(22px)
+    fill #AFB0B6
+    transition all linear .2s
+  &:hover
+    .icon
+      fill #fff
+      filter: drop-shadow(0px 0px 5px rgba(255,255,255,0.5));
+.section-migdex-content--more
+  display flex
+  align-items center
+.section-migdex-content--col
+  display flex
+  margin-bottom 30px
+.section-migdex-content
+  display none
+.section-migdex-content.active
+  display block
+.section-migdex-content--blur
+  position absolute
+  display flex
+  justify-content center
+  align-items center
+  left 0
+  right 0
+  top 0
+  bottom 0
+  border-radius 5px 5px 0 0
+  backdrop-filter: blur(10px);
+  span
+    font-family Ow600
+    font-size 30px
+    color #fff
+    text-transform uppercase
+.section-migdex-content-hit
+  position absolute
+  font-family Os600
+  font-size 15px
+  color #fff
+  background-color #FDC630
+  height 42px
+  padding 10px 23px
+  top 30px
+  left -10px
+  &:before
+    content: '';
+    position: absolute;
+    top: 42px;
+    left: 0px;
+    width: 10px;
+    height: 10px;
+    background-color: #9C7407
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+  &:after
+    content: '';
+    absolute-center()
+    left auto
+    transform: translate(0%, -50%);
+    right -29px
+    width: 30px;
+    height 100%
+    background-color #FDC630
+    clip-path: polygon(80% 0, 8% 50%, 80% 100%, 0 100%, 0 50%, 0 0);
+.section-migdex-content-stock
+  position absolute
+  font-family Os600
+  font-size 15px
+  color #fff
+  background-color #F37335
+  height 42px
+  padding 10px 23px
+  top 30px
+  left -10px
+  &:before
+    content: '';
+    position: absolute;
+    top: 42px;
+    left: 0px;
+    width: 10px;
+    height: 10px;
+    background-color: #A54110
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+  &:after
+    content: '';
+    absolute-center()
+    left auto
+    transform: translate(0%, -50%);
+    right -29px
+    width: 30px;
+    height 100%
+    background-color #F37335
+    clip-path: polygon(80% 0, 8% 50%, 80% 100%, 0 100%, 0 50%, 0 0);
+
+.section-template-content
+  display flex
+  align-items center
+  justify-content space-between
+  width 100%
+.section-template-content--item
+  position relative
+  display flex
+  justify-content center
+  z-index 1
+
+
+  &:nth-child(2)
+    margin-top 50px
+    .section-template-content--img
+      margin-bottom 20px
+    &:before
+      content ''
+      position absolute
+      background-image url("/static/img/content/pun.png")
+      background-size cover
+      background-repeat no-repeat
+      width: 280px;
+      height: 64px;
+      right: 0;
+      transform: translate(-108px, 3px);
+    &:after
+      content ''
+      position absolute
+      background-image url("/static/img/content/pun.png")
+      background-size cover
+      background-repeat no-repeat
+      width: 280px;
+      height: 64px;
+      left: 0;
+      transform: translate(111px, 8px) rotate(-7deg);
+.section-template-content--img
+  display flex
+  justify-content center
+  align-items center
+  background-color #404452
+  border-radius 50%
+  size(100px)
+  box-shadow 0 0 0 10px rgba(255,255,255,0.05)
+  z-index 5
+.section-template-content--title
+  position relative
+  display flex
+  justify-content center
+  align-items center
+  width max-content
+  font-family Ow600
+  font-size 20px
+  color #FDC630
+  span
+    margin-left 3px
+    color #fff
+
+  &:nth-child(2)
+    margin-top 20px
+.section-template-content--title__wrap
+  display flex
+  align-items flex-start
+  justify-content space-between
+.section-template-content--info__item
+  display flex
+  flex-direction column
+.section-template-content--desc
+  color #A5A7AE
+  font-family Os400
+  font-size 14px
+  text-align center
+  &:nth-child(2)
+    padding 0 20px
+    margin-top 20px
+.mb-120
+  margin-bottom 120px
+.migdex-button-wrap
+  display flex
+  justify-content center
+  align-items flex-end
+  height 60px
+.section-baner
+  background-repeat no-repeat
+  background-size cover
+  height 75vh
+  //background-attachment fixed
+  //will-change transform
+  width 100%
+  padding-top 200px
+.baner-wrapper
+  display flex
+.baner-title
+  font-family Ow600
+  font-size 35px
+  color #fff
+  margin-bottom 30px
+.baner-desc
+  font-family Rb400
+  font-size 17px
+  color #fff
+  margin-bottom 95px
+.baner-desc-dual
+  display flex
+.baner-desc-v2
+  font-family Rb400
+  font-size 15px
+  color #fff
+  text-align center
+.baner-bg--img
+  background-size contain
+  background-repeat no-repeat
+  width 100%
+  height 350px
+  transform: translateY(20px);
+.migdex-products--img
+  background-size contain
+  background-repeat no-repeat
+  background-position center
+  height 130px
+  min-height: 130px;
+  width 100%
+  margin-bottom 15px
+.p-10-30
+  padding 10px 30px
+.migdex-products--title
+  font-family Ow500
+  font-size 17px
+  color #fff
+  margin-bottom 10px
+  text-align center
+.migdex-products--desc
+  font-family Rb400
+  font-size 14px
+  color #AAACB2
+  text-align center
+  margin-bottom 25px
+.migdex-products--info
+  display flex
+  align-items center
+  margin-bottom 10px
+.migdex-products--info__team
+  display flex
+  justify-content center
+  align-items center
+  width 50%
+  padding-left 20px
+  padding-right 0
+  &:first-child
+
+    padding-right 20px
+    border-right 1px solid #555965
+
+  .icon
+    size(21px)
+    fill #fff
+    margin-right 10px
+  span
+    font-family Ow400
+    font-size 17px
+    color #fff
+.p-13-20
+  padding 13px 20px
+.fs-13
+  font-size 13px
+.migdex-products--info__flex--top
+  display flex
+  flex-direction column
+.migdex-products--info__flex
+  display flex
+  flex-direction column
+  justify-content space-between
+  height 100%
+.w-370
+  width 370px
+.migdex-people-count
+  display flex
+  justify-content center
+  align-items center
+  margin-bottom 45px
+  .icon
+    size(30px)
+    margin-right 15px
+    fill #fff
+  span
+    display flex
+    font-family Ow500
+    font-size 20px
+    color #fff
+    margin-right 15px
+    cursor pointer
+    &:last-child
+      margin-right 0
+  span.active
+    color #F37734
+.fs-26
+  font-size 25px
+.migdex-products-card--price
+  font-family Ow500
+  font-size 23px
+  color #fff
+  text-align center
+  margin-bottom 30px
+.migdex-products-card--list
+  margin-bottom 40px
+.migdex-products-card--item
+  font-family Os400
+  font-size 14px
+  color #AAACB2
+  margin-bottom 15px
+  text-align center
+  &:last-child
+    margin-bottom 0
+.fs-16
+  font-size 16px
+.p-40-55
+  padding 40px 55px
+.migdex-more-info-card
+  font-family Rb400
+  font-size 15px
+  color #F37734
+  text-align center
+.mb-15
+  margin-bottom 15px !important
+.mb-30
+  margin-bottom 30px !important
+.fs-20
+  font-size 20px
+.migdex-products--icon
+  display flex
+  justify-content center
+  align-items center
+  flex-direction column
+  margin-bottom 20px
+  .icon
+    size(54px)
+    fill #fff
+    margin-bottom 20px
+  &:after
+    content ''
+    background-position center
+    position relative
+    background-image url("/static/img/content/svg/line2.svg")
+    background-size contain
+    width 72px
+    height 10px
+    background-repeat no-repeat
+    display block
+
+.p-30
+  padding 30px
+.support-item
+  padding 30px 15px
+  border-radius 10px
+.support-img
+  display flex
+  justify-content center
+  align-items center
+  margin 0 auto
+  margin-bottom 30px
+  size(70px)
+.support-item--text
+  color #fff
+  font-family Ow400
+  font-size 15px
+  text-align center
+  span
+    cursor pointer
+    color #F37335
+
+.support-cols
+  display flex
+  margin-bottom 30px
+
+.support-request
+  border-radius 10px
+  padding 60px 100px
+  margin 0 auto
+.section-services--wrapper
+  display flex
+.sidebar-services-box
+  border-radius 5px
+  padding 20px
+  padding-top 0
+  padding-bottom 0
+  margin-bottom 30px
+.sidebar-services--item--wrap
+  display flex
+  align-items center
+  justify-content space-between
+
+.sidebar-services--item
+  border-bottom 1px solid rgba(255,255,255,0.1)
+  cursor pointer
+  padding 15px 0
+  &:last-child
+    border-bottom 0
+  span
+    font-family Ow400
+    font-size 15px
+    color #fff
+  .icon
+    size(13px)
+    fill #fff
+
+.sidebar-services--list__depth2
+  display flex
+  flex-direction column
+.sidebar-services--item__depth2
+  font-family Ow400
+  font-size 14px
+  color #fff
+  margin-bottom 10px
+  &:last-child
+    margin-bottom 0
+  &:first-child
+    margin-top 10px
+.section-migdex-content--link__more
+  color #F37335
+  font-family Ow600
+  font-size 13px
+.min-height
+  height 200px
+  min-height 200px
+.content-services
+  padding-right 0
+.sidebar-services-sticky
+  position sticky
+  top 30px
+  display block
+  margin-bottom 30px
+.basket-content-top
+  display flex
+  align-items center
+  justify-content space-between
+  padding 15px
+  border-radius 5px
+.basket-content-top--left
+  display flex
+  align-items center
+.basket-content-top-dot,.basket-content-top-dot__item
+  background-color #363949
+  position relative
+  size(19px)
+  border-radius 50%
+  border 1px solid #404452
+  margin-right 10px
+  cursor pointer
+.basket-content-top-text
+  font-family Os600
+  font-size 14px
+  color #fff
+  cursor pointer
+.basket-content
+  padding-left 0
+.basket-content-top-delete
+  font-family Os600
+  font-size 14px
+  color #F37535
+  cursor pointer
+.section-basket--wrap
+  display flex
+.basket-content-top-input
+  display none
+.basket-content-top--left.checked
+  .basket-content-top-dot
+    background: linear-gradient(92.29deg, #F37535 0%, #FDC630 100%);
+    border 3px solid #b56f1d
+.basket-content-top-dot__item.checked
+  background: linear-gradient(92.29deg, #F37535 0%, #FDC630 100%);
+  border 3px solid #b56f1d
+.basket-content-top-dot.checked
+  background: linear-gradient(92.29deg, #F37535 0%, #FDC630 100%);
+  border 3px solid #b56f1d
+.basket-content-top
+  margin-bottom 20px
+.basket-input-item
+  position absolute
+  left 0
+  right 0
+  bottom 0
+  top 0
+  width 100%
+  height 100%
+  display none
+.basket-content-img
+  background-size cover
+  background-repeat no-repeat
+  size(160px,110px)
+  background-position center
+.baslet-content-bottom--left
+  display flex
+  align-items center
+  margin-bottom 0
+.basket-content-bottom__item
+  display flex
+  justify-content space-between
+  align-items center
+  border-radius 5px
+  padding 15px
+  user-select none
+  margin-bottom 20px
+  &:last-child
+    margin-bottom 0
+.basket-content-item--title
+  font-family Ow500
+  font-size 15px
+  color #fff
+  margin-bottom 15px
+.basket-content-item--desc
+  font-family Os600
+  font-size 12px
+  color #AAACB2
+  margin-bottom 20px
+.basket-migdex-products--info
+  display flex
+  align-items center
+.basket-migdex-products--info__team--line
+  width 1px
+  height 27px
+  background-color #555965
+  margin 0 20px
+.basket-migdex-products--info__team
+  display flex
+  align-items center
+  .icon
+    size(15px)
+    fill #fff
+    margin-right 10px
+  span
+    font-family Ow400
+    font-size 14px
+    color #fff
+.basket-content-item--count
+  display flex
+  align-items center
+  justify-content space-between
+  border 1px solid #6B6D79
+  border-radius 5px
+  margin-bottom 30px
+  input
+    width 30px
+    background-color transparent
+    border none
+    font-family Os600
+    font-size 14px
+    color #fff
+    text-align center
+
+.basket-content-item--count__minus,.basket-content-item--count__plus
+  display flex
+  justify-content center
+  align-items center
+  padding 13px
+  cursor pointer
+  transition all linear .2s
+
+  &:hover
+    .icon
+      fill #f37535
+  .icon
+    size(12px)
+    fill #fff
+
+.basket-content-item--price
+  font-family Ow500
+  font-size 17px
+  color #fff
+.basket-content-bottom--right
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+.basket-over-top
+  display flex
+  align-items center
+  justify-content space-between
+  padding-bottom 20px
+  border-bottom 1px solid #404452
+
+.basket-over-title
+  font-family Ow500
+  font-size 19px
+  color #fff
+.basket-over-count
+  font-family Os600
+  font-size 13px
+  color #858790
+.basket-over
+  position sticky
+  top 30px
+  display block
+  padding 20px
+  border-radius 5px
+.basket-over-body--item
+  display flex
+  justify-content space-between
+  align-items center
+  margin-bottom 10px
+  &:last-child
+    margin-bottom 0
+.basket-over-body--title
+  font-family Os600
+  font-size 15px
+  color #AAACB2
+.basket-over-body--price
+  font-family Os600
+  font-size 15px
+  color #fff
+.basket-over-body
+  height: calc(100vh - 406px);
+  overflow-y auto
+  min-height 150px
+  padding 20px 0
+.basket-over-body::-webkit-scrollbar
+  width 0
+.bakset-over-bottom
+  border-top 1px solid #404452
+  padding-top 20px
+.bakset-over-bottom--over
+  display flex
+  align-items center
+  justify-content space-between
+  margin-bottom 30px
+.basket-over-price
+  font-family Ow500
+  font-size 19px
+  color #fff
+.w-220
+  min-width 220px
+.migdex-tabs-ofor
+  border-radius 5px
+  padding 20px
+  justify-content flex-start
+  .section-migdex-tab
+    background-color #404352
+    color #fff
+.basket-content-ofor
+  padding-left 0
+
+.basket-ofor-block--top__title
+  margin-bottom 15px
+  text-align left
+  font-family Ow500
+  font-size 19px
+  color #fff
+  padding-bottom 20px
+  border-bottom 1px solid #404452
+.basket-ofor-block
+  padding 20px
+  border-radius 5px
+  margin-bottom 30px
+  &:last-child
+    margin-bottom 0
+.mb-20
+  margin-bottom 20px
+.migdex-ofor-checkbox
+  label
+    display flex
+    align-items center
+.migdex-checkbox--input
+  display none
+.migdex-checkbox--text
+  font-family Os400
+  font-size 14px
+  color #AAACB2
+  a
+    color #F37335
+.migdex-checkbox
+  margin-right 10px
+  size(17px)
+  background-color #404452
+  border 2px solid #4A4D5B
+  position relative
+  border-radius 3px
+  cursor pointer
+.migdex-checkbox.checked
+  &:before
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 7px;
+    background: #F37535;
+    width: 1.5px;
+    height: 1.5px;
+    box-shadow: 2px 0px 0 #F37535, -2px 0px 0 #F37535, 4px 0 0 #F37535, 4px -2px 0 #F37535, 4px -4px 0 #F37535, 4px -6px 0 #F37535, 4px -8px 0 #F37535, 4px -10px 0 #F37535;
+    transform: rotate(45deg);
+.migdex-nds-item
+  display flex
+  align-items center
+  padding 20px 15px
+  border 1px solid #404452
+  border-radius 5px
+  cursor pointer
+.migdex-nds-dot
+  background-color: #363949;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  border: 1px solid #404452;
+  margin-right: 10px;
+  cursor: pointer;
+.migdex-nds-check.checked
+  .migdex-nds-dot
+    background: linear-gradient(92.29deg, #f37535 0%, #fdc630 100%);
+    border: 3px solid #b56f1d;
+.migdex-nds-input
+  display none
+.migdex-nds-text
+  font-family Os600
+  font-size 15px
+  color #fff
+.section-lk--wrap
+  display flex
+.migdex-lk-sidebar--box
+  border-radius 5px
+  padding 20px 15px
+.migdex-lk-sidebar--list
+  display flex
+  flex-direction column
+.migdex-lk-sidebar--box
+  margin-bottom 30px
+.migdex-lk-sidebar--item
+  font-family Os400
+  font-size 15px
+  color #fff
+  margin-bottom 15px
+  &:last-child
+    margin-bottom 0
+.migdex-lk-sidebar--logout
+  display flex
+  justify-content center
+  align-items center
+  width 100%
+  background-color #2B2F3F
+  border-radius 5px
+  padding 15px
+  font-family Ow500
+  font-size 17px
+  color #fff
+  cursor pointer
+.migdex-lk-content--box
+  height 100%
+  border-radius 5px
+  padding 30px
+.m-0-30
+  margin 0 -30px
+
+.migdex-lk-content-date
+  label
+    font-family: 'Open Sans 600', sans-serif;
+    font-size: 12px;
+    color: #fff;
+  .migdex-popup-input__icon
+    right 5px
+    .icon
+      fill #8C8F97
+
+.migdex-lk-content--title
+  font-family Ow500
+  font-size 19px
+  color #fff
+  margin-bottom 20px
+.migdex-lk-content--flex
+  display flex
+  justify-content space-between
+.migdex-lk-content--profile
+  margin 0 auto
+  position relative
+  size(80px)
+  border-radius 50%
+  margin-bottom 10px
+.migdex-lk-content--profile__img
+  border-radius 50%
+  size(80px)
+  background-repeat no-repeat
+  background-size cover
+  background-position center
+.migdex-lk-content--profile__input
+  position absolute
+  opacity 0
+  line-height 0
+  left 0
+  top 0
+  bottom 0
+  right 0
+  width 100%
+  cursor pointer
+.migdex-lk-content--profile__wrap
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+.migdex-lk-content--profile__name
+  font-family Ow500
+  font-size 19px
+  color #fff
+  margin-bottom 10px
+.migdex-lk-content--profile__change
+  font-family Os600
+  font-size 12px
+  color #F37535
+  cursor pointer
+.migdex-lk-content--box__section
+  margin-bottom 20px
+.migdex-lg-content--block--w-30
+  width 30%
+.migdex-lg-content--block--w-70
+  display flex
+  flex-wrap wrap
+  width: 69.31%;
+.m-0-15
+  margin 0 -15px
+.migdex-lg-content--block--w-100
+  display flex
+  flex-wrap wrap
+.migdex-lk-content-submit
+  font-family Os600
+  font-size 13px
+  color #F37535
+  text-decoration underline
+  cursor pointer
+  margin-top 10px
+.migdex-lk-submited
+  color #16A085
+  text-decoration none
+.migdex-lk-settings-title
+  font-family Os600
+  font-size 15px
+  color #fff
+  margin-bottom 20px
+  a
+    color #F37535
+.migdex-lk-settings-dot--item
+  display flex
+  align-items center
+  margin-bottom 15px
+
+  .basket-content-top-dot__item
+    margin-right 10px
+    margin-bottom 0
+.migdex-lk-settings-dot--text
+  font-family Os400
+  font-size 14px
+  color #AAACB2
+.migdex-lk-sidebar--stycky
+  position sticky
+  top 30px
+  display block
+.migdex-lk-content--desc
+  font-family Os400
+  font-size 15px
+  color #AAACB2
+.migdex-lk-content-submit
+  absolute-center()
+  width 111px
+  left auto
+  right 5px
+  height 39px
+  display flex
+  justify-content center
+  align-items center
+  border none
+  color #fff
+  font-family Ow500
+  font-size 14px
+  background: linear-gradient(92.29deg, #F37535 0%, #FDC630 100%);
+  box-shadow: 0px 0px 8px rgba(253, 198, 48, 0.4);
+  margin-top 0
+  border-radius: 5px;
+  text-decoration none
+  transform translate(0%, -50%)
+
+  &:focus
+    outline none
+.pr-120
+  //padding-right 120px
+  padding-right 31%
+
+
+
+
+

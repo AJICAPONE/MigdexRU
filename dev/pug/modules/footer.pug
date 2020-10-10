@@ -1,0 +1,57 @@
+footer
+    .container
+        .footer-wrap
+            .col-xl-8.col-lg-8.col-md-8.col-sm-12.footer-left
+                .footer-block
+                    a.footer-logo(href="/")
+                        +logo('footer-logo')
+                    .footer-tel
+                        +icon('phone')
+                        a.footer-tel--link(href="tel:+79684060110") +7 (968) 406-01-10
+                    .footer-email
+                        .footer-email--title Email:
+                        a.footer-email-email(href="mailto:info@migdex-edu.ru") info@migdex-edu.ru
+                    .footer-social
+                        a.footer-soc-item(href="/")
+                            +icon('vk')
+                        a.footer-soc-item(href="/")
+                            +icon('fb')
+                        a.footer-soc-item(href="/")
+                            +icon('yt')
+                .footer-block
+                    .footer-title-block УСЛУГИ
+                    ul.footer-list-block
+                        a.footer-list-link(href="/") Разработка сайтов
+                        a.footer-list-link(href="/") Маркетинг
+                        a.footer-list-link(href="/") Автоматизация
+                        a.footer-list-link(href="/") UX | UI Дизайн
+                        a.footer-list-link(href="/") Поддержка
+                        a.footer-list-link(href="/") Тарг. реклама
+
+                .footer-block
+                    .footer-title-block КОМПАНИЯ
+                    ul.footer-list-block
+                        a.footer-list-link(href="/") О нас
+                        a.footer-list-link(href="/") Блог
+                        a.footer-list-link(href="/") Реквизиты
+                        a.footer-list-link(href="/") Контакты
+                        a.footer-list-link(href="/") Условия соглашения
+
+            .col-xl-4.col-lg-4.col-md-4.col-sm-12.footer-right
+                a.footer-phone(href="tel:+79684060110") +7 (968) 406-01-10
+                .migdex-callback.migdex-button.w-270.mb-25.m-0-auto Обратный звонок
+                a.footer-download.mt-25(href="/" download)
+                    +icon('pdf')
+                    span Скачать презентацию
+.footer-copyright
+    .container
+        .footer-copyright--wrap
+            .footer-copyright-protect © 2019 Migdex.ru Все права защищены.
+            a.footer-copyright--link(href="/") Политика конфиденциальности
+include ../popups/popup-auth
+include ../popups/popup-reg
+include ../popups/popup-brif
+
+
+
+

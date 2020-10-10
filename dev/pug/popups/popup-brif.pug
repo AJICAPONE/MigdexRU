@@ -1,0 +1,76 @@
+#popup-brif.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.w-1030(role='document')
+        .modal-content
+            .popup-close--wrap
+                .popup-close(data-dismiss='modal' aria-label='Close')
+                    +icon('close')
+            .popup-header
+                .popup-title Заполните бриф
+
+
+            .popup-body
+                .migdex-popup-input
+                    label Какой сайт Вас интересует?
+                    textarea.migdex-textarea(cols="5" rows="3" placeholder="Укажите вид и тематику сайта...")
+                .migdex-popup-input
+                    label Чем занимается компания?
+                    textarea.migdex-textarea(cols="5" rows="5" placeholder="Укажите род деятельности компании...")
+                .migdex-popup-input
+                    label Есть ли у компании фирменный стиль?
+                    textarea.migdex-textarea(cols="5" rows="5" placeholder="Укажите корпоративные цвета или стили...")
+                .migdex-popup-input
+                    label Есть ли сайты которые Вам нравятся?
+                    textarea.migdex-textarea(cols="5" rows="5" placeholder="Укажите ссылки...")
+                .migdex-popup-input--col__wrap
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.migdex-popup-input--col
+                        .migdex-popup-input
+                            label С кем согласовывать проект в процессе?
+                            input.migdex-input--wave.h-47(placeholder="Укажите контактное лицо...")
+                        .migdex-popup-input--col
+                            label Есть ли бюджет в который Вы планируете уложиться?
+                            .migdex-popup-input-cols--flex
+                                .col-xl-6.col-lg-6.col-md-6.col-sm-12.migdex-popup-input.mb-0
+                                    input.migdex-input--wave.h-47(placeholder="от")
+                                .migdex-tire -
+                                .col-xl-6.col-lg-6.col-md-6.col-sm-12.migdex-popup-input.mb-0
+                                    input.migdex-input--wave.h-47(placeholder="до")
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.migdex-popup-input--col
+                        .migdex-popup-input
+                            label Есть ли у Вас уже сайт?
+                            input.migdex-input--wave.h-47(placeholder="Оставьте ссылку...")
+                        .migdex-popup-input--col
+                            label Какой срок заложен на создание сайта?
+                            .migdex-popup-input-cols--flex
+                                .col-xl-6.col-lg-6.col-md-6.col-sm-12.migdex-popup-input.mb-0
+                                    input.migdex-input--wave.h-47.datepicker-pick-1(placeholder="__.__.____")
+                                    .migdex-popup-input__icon
+                                        +icon('calendar')
+                                .migdex-tire -
+                                .col-xl-6.col-lg-6.col-md-6.col-sm-12.migdex-popup-input.mb-0
+                                    input.migdex-input--wave.h-47.datepicker-pick-2(placeholder="__.__.____")
+                                    .migdex-popup-input__icon
+                                        +icon('calendar')
+                .migdex-popup-input
+                    label Какую задачу должен выполнять сайт?
+                    textarea.migdex-textarea(cols="5" rows="4" placeholder="Кратко опишите для чего Вам нужен сайт, какие основные задачи он должен выполнять...")
+                .migdex-added-files--wrap
+                    .migdex-add-file
+                        .migdex-add-file--icon
+                            +icon('paperclip')
+                        .migdex-add-file--name Добавить файл
+                        input(type="file" multiple)
+                    .migdex-max-size Объемом не более 100 мб
+                .popup-load--file--wrap
+                .popup-title.text-center.mb-30 Контактная информация
+                .migdex-popup-input--col__wrap
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.migdex-popup-input--col
+                        .migdex-popup-input
+                            label Ваш номер телефона:
+                            input.migdex-input--wave.h-47(data-mask="+7 (000) 000-00-00" placeholder="Укажите телефон...")
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.migdex-popup-input--col
+                        .migdex-popup-input--col
+                            label Ваш email:
+                            input.migdex-input--wave.h-47(placeholder="Укажите электронную почту...")
+
+            .popup-footer.mt-40
+                button.migdex-button-block.w-230.m-0-auto(type="submit") Оставить заявку

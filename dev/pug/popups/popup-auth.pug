@@ -1,0 +1,33 @@
+#popup-auth.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered(role='document')
+        .modal-content
+            .popup-close--wrap
+                .popup-close(data-dismiss='modal' aria-label='Close')
+                    +icon('close')
+            .popup-header
+                .popup-title Авторизация
+
+
+            .popup-body
+                .migdex-popup-input
+                    label Телефон:
+                    input.migdex-input--wave.h-47(type="text" data-mask="+7 (000) 000-00-00" placeholder="+7 ...")
+                .migdex-popup-input
+                    label Пароль:
+                    input.migdex-input--wave.h-47(type="password" placeholder="Введите пароль")
+                button.migdex-button-block.w-100(type="submit") Войти
+            .popup-footer.mt-40
+                .popup-social-login
+                    .popup-social-title Или войдите через соц.сети
+                    .popup-social-list
+                        .popup-social-item
+                            +icon('vk')
+                        .popup-social-item
+                            +icon('fb')
+                        .popup-social-item
+                            +icon('gplus')
+                        .popup-social-item
+                            +icon('ok')
+                    .popup-not-have-acc
+                        .popup-not-have-acc--title Еще нет аккаунта?
+                        .popup-not-have-link(data-dismiss="modal" data-toggle="modal" data-target="#popup-reg") Зарегистрируйтесь

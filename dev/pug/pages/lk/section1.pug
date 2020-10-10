@@ -1,0 +1,81 @@
+section.section1.p-60-0.pt-2
+    .container
+        .section-migdex-wrap
+            .section-title.mb-30.text-left Вадим Громов
+            .section-lk--wrap
+                include sidebar/sidebar
+
+
+                .col-xl-9.col-lg-9.col-md-6.col-sm-12.migdex-lk-content.pr-0
+                    .migdex-lk-content--box.blue-box
+                        .migdex-lk-content--box__section
+                            .migdex-lk-content--title Личная информация
+                            .migdex-lk-content--flex
+                                .migdex-lg-content--block--w-70.m-0-15
+                                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.mb-20
+                                        .migdex-popup-input
+                                            label Имя:
+                                            input.migdex-input--wave.h-47(type="text" placeholder="Укажите имя")
+                                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.mb-20
+                                        .migdex-popup-input
+                                            label Фамилия:
+                                            input.migdex-input--wave.h-47(type="text" placeholder="Укажите фамилию")
+                                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.mb-20
+                                        .migdex-popup-input
+                                            label Отчество:
+                                            input.migdex-input--wave.h-47(type="text" placeholder="Укажите отчество")
+                                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.migdex-lk-content-date.mb-20
+                                        label День рождения:
+                                        .migdex-popup-input.mb-0
+                                            input.migdex-input--wave.h-47.datepicker-pick-1(type="text" placeholder="__.__.____")
+                                            .migdex-popup-input__icon
+                                                +icon('calendar')
+
+                                .migdex-lg-content--block--w-30.d-flex.justify-content-center
+                                    .migdex-lk-content--profile__wrap
+                                        .migdex-lk-content--profile
+                                            .migdex-lk-content--profile__img(style="background-image:url('/static/img/general/lk.png')")
+                                            input.migdex-lk-content--profile__input#change-lk(type="file")
+                                        .migdex-lk-content--profile__name Вадим Громов
+                                        label.migdex-lk-content--profile__change(for="change-lk") Изменить аватар
+                        .migdex-lk-content--box__section
+                            .migdex-lk-content--title Контактная информация
+                            .migdex-lg-content--block--w-100.m-0-15
+                                .col-xl-4.col-lg-4.col-md-6.col-sm-12.mb-20
+                                    .migdex-popup-input
+                                        label Телефон:
+                                        input.migdex-input--wave.h-47(type="text" placeholder="Укажите телефон")
+                                        .migdex-lk-content-submit Подтвердить
+                                .col-xl-4.col-lg-4.col-md-6.col-sm-12.mb-20
+                                    .migdex-popup-input
+                                        label Email:
+                                        input.migdex-input--wave.h-47(type="email" placeholder="Укажите телефон")
+                                        .migdex-lk-content-submit.migdex-lk-submited Подтверждён
+                                .col-xl-4.col-lg-4.col-md-6.col-sm-12.mb-20
+                                    .migdex-popup-input
+                                        label Компания:
+                                        input.migdex-input--wave.h-47(type="text" placeholder="")
+                        .migdex-lk-content--box__section
+                            .migdex-lk-content--title Адрес по прописке
+                            .migdex-lg-content--block--w-100.m-0-15
+                                .col-xl-12.col-lg-12.col-md-12.col-sm-12.mb-20
+                                    .migdex-popup-input
+                                        label Адрес по прописке::
+                                        input.migdex-input--wave.h-47(type="text" placeholder="Укажите телефон")
+
+                        .migdex-lk-content--box__section.mb-40
+                            .migdex-lk-content--title Изменение пароля
+                            .migdex-lg-content--block--w-100.m-0-15
+                                .col-xl-4.col-lg-4.col-md-6.col-sm-12
+                                    .migdex-popup-input
+                                        label Старый пароль:
+                                        input.migdex-input--wave.h-47(type="text" placeholder="")
+                                .col-xl-4.col-lg-4.col-md-6.col-sm-12
+                                    .migdex-popup-input
+                                        label Новый пароль:
+                                        input.migdex-input--wave.h-47(type="text" placeholder="")
+                                .col-xl-4.col-lg-4.col-md-6.col-sm-12
+                                    .migdex-popup-input
+                                        label Подтвердите пароль:
+                                        input.migdex-input--wave.h-47(type="text" placeholder="")
+                        .migdex-button.w-210 Сохранить

@@ -1,0 +1,24 @@
+header
+    .container
+        .header-wrapper
+            .header-logo.header-start
+                +logo('logo')
+
+            .header-middle
+                .header-info
+                    +icon('clock')
+                    .header-info--text Пн - Вс с 09:00 до 20:00
+                .header-info
+                    +icon('mail')
+                    a.header-info--text(href="mailto:info@migdex.ru") info@migdex.ru
+            .header-end
+                .header-tel-wrap
+                    a.header-tel-text(href="tel:+79684060110") +7 (968) 406-01-10
+                    .header-callback Обратный звонок
+                .header-end-attr
+                    .header-user(data-toggle="modal" data-target="#popup-auth")
+                        +icon('user')
+                    .header-cart
+                        +icon('cart')
+    include ../modules/menu
+

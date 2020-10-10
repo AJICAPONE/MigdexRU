@@ -1,0 +1,20 @@
+#popup-reg.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered(role='document')
+        .modal-content
+            .popup-close--wrap
+                .popup-close(data-dismiss='modal' aria-label='Close')
+                    +icon('close')
+            .popup-header
+                .popup-title Регистрация
+
+
+            .popup-body
+                .migdex-popup-input
+                    label Телефон:
+                    input.migdex-input--wave.h-47(type="text" data-mask="+7 (000) 000-00-00" placeholder="+7 ...")
+                button.migdex-button-block.w-100(type="submit") Регистрация
+            .popup-footer.mt-40
+                .popup-social-login
+                    .popup-not-have-acc
+                        .popup-not-have-acc--title Уже есть аккаунт?
+                        .popup-not-have-link(data-dismiss="modal" data-toggle="modal" data-target="#popup-auth") Войдите
