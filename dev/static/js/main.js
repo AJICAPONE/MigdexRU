@@ -951,7 +951,7 @@ $(document).ready(function () {
                 '                              </div>\n' +
                 '                              <p class="chat-container--message">'+ contents  +'</p>\n' +
                 '                            </div>\n' +
-                `                          <div class='chat-container-message--img' style='background-image:url("/static/img/content/drivers-avatar/driver2.png");'></div>\n` +
+                `                          <div class='chat-container-message--img' style='background-image:url("/static/img/content/slider/img1.png");'></div>\n` +
                 '                          </div>\n' +
                 '                          <div class="chat-container-message--wrap--delete__check--wrap">\n' +
                 '                            <div class="chat-container-message--wrap--delete__check"></div>\n' +

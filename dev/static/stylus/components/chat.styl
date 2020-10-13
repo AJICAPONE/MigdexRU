@@ -1,10 +1,10 @@
 .chat-container-block
   border-radius: 5px;
-  background: #fff;
+  background: #2B2F3F
 .chat-container-header
   padding: 15px 20px;
   border-radius: 5px;
-  background-color: #272727;
+  background-color: #363949
 .chat-container-header,.chat-container-header--info__option
   display flex
   align-items center
@@ -29,11 +29,11 @@
   width: 42px;
   height: 42px;
   cursor: pointer;
-  background-color: rgba(255,255,255,.05);
+  background-color: #404352
 .gogocar-gray-icons
   position: absolute;
   left: 15px;
-  background: #424b5b3d;
+  background: #404352
 .gogocar-gray-icons, .gogocar-gray-icons2, .gogocar-yellow-icons
   display: flex;
   border-radius: 5px;
@@ -61,11 +61,11 @@
   margin-bottom: 6px;
   color: #fff;
 .chat-container-header--desc
-  font-family: MS400
+  font-family: Os600
   font-size: 12px;
-  color: rgba(255,255,255,.6);
+  color: #AFB2B5
   a
-    font-family: RT300
+    font-family: Os600
     margin-left: 5px
     color #fff
 .chat-container-header--option--left--wrap
@@ -130,10 +130,11 @@
   padding: 12px;
   cursor: pointer;
   border-radius: 5px;
-  background: #F4F4F4;
-  box-shadow: 0 0 20px rgba(0,0,0,.3);
+  background: #404452
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
   flex-direction: column
   width max-content
+  border: 1px solid rgba(255, 255, 255, 0.03);
 .chat-container-header--delete__message .icon
   width: 19px;
   height: 19px;
@@ -142,9 +143,9 @@
   font-family: 'Montserrat 500',sans-serif;
   font-size: 14px;
   width: max-content;
-  color: #272727;
+  color: #fff
 .chat-container-main--info
-  overflow-y: scroll;
+  overflow-y: auto;
   max-height: 485px;
   margin-right: 5px;
   padding-bottom: 130px
@@ -158,7 +159,7 @@
   background-color: transparent;
 .chat-container-main--info::-webkit-scrollbar-thumb
   border-radius: 10px;
-  background-color: #2F80ED
+  background-color: #f9a732
 .chat-container-main--info::-webkit-scrollbar-track
   margin-right: 5px;
 .chat-container-main--info::-webkit-scrollbar-track-piece
@@ -170,7 +171,7 @@
   display: block;
   padding: 40px 0;
   text-align: center;
-  color: #272727;
+  color: #fff
 .chat-container-message-out
   align-items: flex-end;
   .chat-container-message--wrapper
@@ -202,7 +203,7 @@
   display: flex;
   padding: 10px 15px;
   border-radius: 15px;
-  background-color: rgba(39,39,39,.05);
+  background-color: #363949
 .chat-container-message--file-type
   display: flex;
   align-items: center;
@@ -215,14 +216,14 @@
   flex-direction: column;
   margin-right: 25px;
 .chat-container-message--format-name
-  font-family: 'Montserrat 500',sans-serif;
+  font-family: Os600
   font-size: 13px;
   margin-bottom: 6px;
-  color: #272727;
+  color: #fff
 .chat-container-message--format-time
-  font-family: 'Montserrat 500',sans-serif;
+  font-family: Os600
   font-size: 13px;
-  color: rgba(39,39,39,.4);
+  color: rgba(255, 255, 255,0.2)
 .chat-container-message--format-download
   position: relative;
   left: auto;
@@ -232,6 +233,7 @@
 .chat-container-message--format-download .icon
   width: 18px;
   height: 18px;
+  fill #fff
 .chat-container-message--wrap--delete__check--wrap
   display: none;
   margin-left: 15px;
@@ -262,23 +264,23 @@
   border-radius: 10px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover
 .chat-container-message--date__name
   display: flex;
   margin-bottom: 10px;
   align-items: center;
   justify-content: space-between;
 .chat-container--message
-  font-family: 'Montserrat 400',sans-serif;
-  font-size: 13px;
-  color: rgba(39,39,39,.5);
+  font-family: Os400
+  font-size: 14px;
+  color: rgba(255, 255, 255,0.5)
 .chat-container-message--date__name span
-  font-family: 'Montserrat 500',sans-serif;
-  font-size: 13px;
-  color: rgba(39,39,39,.4)
+  font-family: Os600
+  font-size: 14px;
+  color: rgba(255, 255, 255,0.2)
 .chat-delete-message,.chat-change-message,.chat-answer-message
   span
-    color #272727 !important
+    color #fff !important
 .chat-container-message--name--wrap
   position: relative;
   display: flex;
@@ -306,9 +308,10 @@
   display: none;
   padding: 17px;
   border-radius: 10px;
-  background: #fff;
+  background: #404452
   -webkit-box-shadow: 0 0 20px rgba(0,0,0,.3);
   box-shadow: 0 0 20px rgba(0,0,0,.3);
+  border: 1px solid rgba(255, 255, 255, 0.03);
 .chat-answer-message
   margin-bottom: 0;
 .chat-container-option--message--item
@@ -322,15 +325,16 @@
   width: 19px;
   height: 19px;
   margin-right: 15px;
+  fill #fff
 .chat-delete-message .icon
   fill #EF4037
 .chat-container-option--message span
   font-size: 13px;
   color: #fff;
 .chat-container-message--name
-  font-family: 'Oswald 400',sans-serif;
-  font-size: 14px;
-  color: #272727;
+  font-family: Os600
+  font-size: 13px;
+  color: #fff
 .chat-container-message-in .chat-container-message--format-text
   margin-right: 17px;
   margin-left: 25px;
@@ -343,7 +347,7 @@
   display: flex;
   margin: 0 20px;
   border-radius: 5px;
-  background-color: rgba(39,39,39,.05);
+  background-color: rgba(255,255,255,.05);
   align-items: flex-end;
 .chat-container--edit--message
   position: absolute;
@@ -354,7 +358,7 @@
   padding: 15px 15px 15px 20px;
   border-bottom: 1px solid rgba(255,255,255,.4);
   border-radius: 5px 5px 0 0;
-  background-color: #FAFAFA
+  background-color: #363949
   align-items: center;
   justify-content: space-between;
 .chat-container--edit--close
@@ -367,11 +371,11 @@
 .chat-container--edit--title
   font-family: 'Oswald 500',sans-serif;
   font-size: 13px;
-  color: #2F80ED;
+  color: #F9A732
 .chat-container--edit--text
-  font-family: 'Montserrat 500',sans-serif;
+  font-family: Os400
   font-size: 12px;
-  color: #272727;
+  color: #fff
 .chat-container--edit--close .icon
   size(18px)
 .chat-container--edit--message--file--add
@@ -391,7 +395,7 @@
   height: max-content;
   border-bottom: 1px solid rgba(255,255,255,.4);
   border-radius: 5px 5px 0 0;
-  background-color: #FAFAFA;
+  background-color: #363949
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -416,7 +420,7 @@
 .personal-loaded--file__icon .icon
   width: 18px;
   height: 18px;
-  fill #272727
+  fill #fff
 .chat-container-footer--file__input
   position: relative;
   display: -webkit-box;
@@ -431,7 +435,7 @@
 .chat-container-footer--file__input .icon
   width: 21px;
   height: 21px;
-  fill rgba(39,39,39,0.7)
+  fill rgba(255,255,255,0.7)
 .chat-container-footer--input__file
   line-height: 0;
   position: absolute;
@@ -448,7 +452,7 @@
   width: 1.5px;
   height: calc(100% - 24px);
   content: '';
-  background-color: rgba(39,39,39,.6);
+  background-color: rgba(255,255,255,.6);
 .chat-container-footer--text__input
   position: relative;
   min-height: 50px;
@@ -461,7 +465,7 @@
   -ms-flex-align: center;
   align-items: center;
 .chat-container-footer--input__text
-  font-family: 'Montserrat 400',sans-serif;
+  font-family: Os600
   font-size: 14px;
   overflow-y: scroll;
   height: 100%;
@@ -469,7 +473,7 @@
   max-height: 40px;
   padding: 10px;
   word-break: break-all;
-  color: #272727;
+  color: #FFF
   border: 0;
   outline: 0;
   background-color: transparent;
@@ -478,17 +482,15 @@
 .chat-container-footer--input__text::-webkit-scrollbar
   width 0
 .chat-container-footer--placeholder
-  font-family: 'Montserrat 400',sans-serif;
+  font-family: Os600
   font-size: 13px;
   position: absolute;
   top: 50%;
   right: auto;
   left: 54px;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   pointer-events: none;
-  color: rgba(39,39,39,.5);
+  color: rgba(255,255,255,.5);
 .chat-container-footer--smiles
   position: relative;
   padding: 12px;
@@ -503,13 +505,14 @@
 .chat-container-footer--smiles .icon
   width: 21px;
   height: 21px;
+  fill rgba(255,255,255,0.6)
 .chat-container-footer--smiles:after
   position: absolute;
   right: 0;
   width: 1.6px;
   height: calc(100% - 24px);
   content: '';
-  background-color: rgba(39,39,39,.6);
+  background-color: rgba(255,255,255,.6);
 .chat-container-footer--emoji--list
   margin: 0;
   padding: 9px 9px 9px 15px;
@@ -522,10 +525,12 @@
   padding: 12px;
   border: 0;
   background-color: transparent;
+  &:focus
+    outline none
 .chat-container-footer--submit .icon
   width: 25px;
   height: 25px;
-  fill #2F80ED
+  fill #FAA832
 .chat-container-message-out .chat-container-message--info__message
   margin-right: 15px;
 .chat-container-message-in .chat-container-message--format .icon
@@ -560,9 +565,9 @@
   width: 2px;
   height: calc(100% - 30px);
   content: '';
-  background-color: #2F80ED;
+  background-color: #FAA832
 .chat-container--edit--close .icon
-  fill #272727
+  fill #fff
 .gogocar-emoji--in-input
   width: 20px;
   height: 20px;
@@ -588,12 +593,12 @@
   margin-bottom: 5px;
   padding: 6px;
   border-radius: 12px;
-  background-color: #EFEFEF;
+  background-color: #404352;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 .personal-icon-loaded--appeal
-  background-color: #EFEFEF;
+  background-color: #404352;
 .personal-loaded--file .gogocar-gray-icons
   position: relative;
   left: auto;
@@ -604,9 +609,9 @@
   height: 21px;
   margin-bottom: 0;
 .personal-loaded--file__name
-  font-family: 'Montserrat 500',sans-serif;
+  font-family: Os600
   font-size: 12px;
-  color: #272727;
+  color: #fff;
 .personal-appear--file--wrap
   margin-bottom 0
 .delete-chat-msg
@@ -686,7 +691,7 @@
   font-size: 14px
   border-radius: 10px
 .chat-container-message-in .chat-container-message--wrap
-  background-color: #E9E9E9
+  background-color: #4B4E5C
 .chats-dots
   position: relative
 .chats-dots-menu
@@ -718,3 +723,6 @@
     margin-bottom: 15px
     &:last-child
       margin-bottom: 0
+
+.chat-container-header--info__mobile
+  display none
