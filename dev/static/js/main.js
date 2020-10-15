@@ -113,6 +113,19 @@ $(document).ready(function () {
         //
         // ]
     });
+
+    $('.migdex-baner-slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: '.migdex-baner-slider--prev',
+        nextArrow: '.migdex-baner-slider--next',
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        rows: 0,
+    });
+
+
     $("#thumb-slider").on("init", function(event, slick){
         var currentSlide = slick.currentSlide + 1;
         var slideCount = slick.slideCount;
