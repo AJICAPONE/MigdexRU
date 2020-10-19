@@ -124,6 +124,72 @@ $(document).ready(function () {
         autoplaySpeed: 2000,
         rows: 0,
     });
+    $('#seo-left').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        // autoplay: true,
+        //autoplaySpeed: 2000,
+        rows: 0,
+        fade: true,
+        infinite: false,
+        asNavFor: '#seo-right'
+    });
+    $('#seo-right').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '.migdex-seo-slider--prev',
+        nextArrow: '.migdex-seo-slider--next',
+        dots: false,
+        // autoplay: true,
+        //autoplaySpeed: 2000,
+        rows: 0,
+        infinite: false,
+        asNavFor: '#seo-left'
+    });
+    $('.section-wave--slider__top').slick({
+        slidesToShow: 9,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        rows: 0,
+        variableWidth: true,
+        centerMode: true,
+        infinite: true,
+        //swipeToSlide: true,
+        pauseOnHover: false,
+    });
+    $('.section-wave--slider__top').on('afterChange', function(event, slick, currentSlide, nextSlide){
+        $('.slick-slide').removeClass('slick-active-first slick-active-last');
+        $('.slick-active').eq(0).addClass('slick-active-first');
+        $('.slick-active').eq(5).addClass('slick-active-last');
+    }).trigger('afterChange');
+
+    $('.section-wave--slider__bottom').slick({
+        slidesToShow: 8,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        rows: 0,
+        variableWidth: true,
+        centerMode: true,
+        infinite: true,
+        //swipeToSlide: true,
+        rtl: true,
+        pauseOnHover: false,
+    });
+    $('.section-wave--slider__bottom').on('afterChange', function(event, slick, currentSlide, nextSlide){
+        $('.slick-slide').removeClass('slick-active-first slick-active-last');
+        $('.slick-active').eq(0).addClass('slick-active-first');
+        $('.slick-active').eq(5).addClass('slick-active-last');
+    }).trigger('afterChange');
+
+
 
 
     $("#thumb-slider").on("init", function(event, slick){
