@@ -1108,6 +1108,11 @@ $(document).ready(function () {
        $(this).next().slideToggle(200);
     });
 
+    $('.migdex-seo-settings--item').click(function () {
+       var get_tab = $(this).attr('data-tab');
+       $(this).addClass('active').siblings().removeClass('active');
+       $('.migdex-seo-settings--tabs .' + get_tab).addClass('active').siblings().removeClass('active')
+    });
 
 
 
