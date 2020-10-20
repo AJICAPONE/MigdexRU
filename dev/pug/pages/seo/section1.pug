@@ -1,46 +1,48 @@
-section.section-baner-page.mb-155(style="background-image:url('./static/img/general/img1.jpg')")
+section.section-baner-page(style="background-image:url('./static/img/general/img1.jpg')")
     .section-baner-padding
         .container
-            .slide-main-content.col-xl-6_5.col-lg-6_5.col-md-6.col-sm-12.p-0.mb-155
+            .slide-main-content.col-xl-6_5.col-lg-6_5.col-md-6.col-sm-12.p-0
                 .slide-main--title2 Получайте на 200% больше потенциальных клиентов
                 form.migdex-form-price
                     input.migdex-transparent--input.w-175(type="text" placeholder="Адрес сайта...")
                     input.migdex-transparent--input.w-175(type="tel" data-mask="+7 (000) 000-00-00" placeholder="Телефон...")
                     button.migdex-button-block.fs-14.w-175(type="submit") Узнать стоимость
-            .migdex-baner-slider--wrap
-                .migdex-baner-slider.row
-                    .migdex-baner-slide.blue-box
-                        .migdex-baner-slide--icon
-                            img(src="/static/img/content/svg/inv.svg")
-                        .migdex-baner-slide--desc Проводим аудит
-                        .migdex-baner-slide--desc и ставим план продвижения
-                    .migdex-baner-slide.blue-box
-                        .migdex-baner-slide--icon
-                            img(src="/static/img/content/svg/inv.svg")
-                        .migdex-baner-slide--desc Проводим аудит
-                        .migdex-baner-slide--desc и ставим план продвижения
-                    .migdex-baner-slide.blue-box
-                        .migdex-baner-slide--icon
-                            img(src="/static/img/content/svg/inv2.svg")
-                        .migdex-baner-slide--desc Согласовываем
-                        .migdex-baner-slide--desc цены
-                    .migdex-baner-slide.blue-box
-                        .migdex-baner-slide--icon
-                            img(src="/static/img/content/svg/inv3.svg")
-                        .migdex-baner-slide--desc Заключаем
-                        .migdex-baner-slide--desc договор
-                    .migdex-baner-slide.blue-box
-                        .migdex-baner-slide--icon
-                            img(src="/static/img/content/svg/inv4.svg")
-                        .migdex-baner-slide--desc Ведём еженедельную
-                        .migdex-baner-slide--desc отчётность по чек листам
-                .migdex-baner-arrows
-                    .migdex-baner-slider--prev
-                        +icon('arrow-down')
-                    .migdex-baner-slider--next
-                        +icon('arrow-down')
+
     a.migdex-play-video(data-fancybox href="static/img/general/videoSlider/migdex.mp4")
         .migdex-play-video--button
             +icon('play2')
 
-
+section.section-slider-seo.tt-count
+    .container
+        .migdex-baner-slider--wrap
+            .migdex-baner-slider.row
+                .migdex-baner-slide.blue-box
+                    .migdex-baner-slide--icon
+                        img(src="/static/img/content/svg/inv.svg")
+                    .migdex-baner-slide--desc Проводим аудит
+                    .migdex-baner-slide--desc и ставим план продвижения
+                .migdex-baner-slide.blue-box
+                    .migdex-baner-slide--icon
+                        img(src="/static/img/content/svg/inv.svg")
+                    .migdex-baner-slide--desc Проводим аудит
+                    .migdex-baner-slide--desc и ставим план продвижения
+                .migdex-baner-slide.blue-box
+                    .migdex-baner-slide--icon
+                        img(src="/static/img/content/svg/inv2.svg")
+                    .migdex-baner-slide--desc Согласовываем
+                    .migdex-baner-slide--desc цены
+                .migdex-baner-slide.blue-box
+                    .migdex-baner-slide--icon
+                        img(src="/static/img/content/svg/inv3.svg")
+                    .migdex-baner-slide--desc Заключаем
+                    .migdex-baner-slide--desc договор
+                .migdex-baner-slide.blue-box
+                    .migdex-baner-slide--icon
+                        img(src="/static/img/content/svg/inv4.svg")
+                    .migdex-baner-slide--desc Ведём еженедельную
+                    .migdex-baner-slide--desc отчётность по чек листам
+            .migdex-baner-arrows
+                .migdex-baner-slider--prev
+                    +icon('arrow-down')
+                .migdex-baner-slider--next
+                    +icon('arrow-down')
