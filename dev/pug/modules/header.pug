@@ -1,24 +1,51 @@
 header
-    .container
-        .header-wrapper
-            .header-logo.header-start
-                +logo('logo')
+    .header-absolute
+        .container
+            .header-wrapper
+                .header-logo.header-start
+                    +logo('logo')
 
-            .header-middle
-                .header-info
-                    +icon('clock')
-                    .header-info--text Пн - Вс с 09:00 до 20:00
-                .header-info
-                    +icon('mail')
-                    a.header-info--text(href="mailto:info@migdex.ru") info@migdex.ru
-            .header-end
-                .header-tel-wrap
-                    a.header-tel-text(href="tel:+79684060110") +7 (968) 406-01-10
-                    .header-callback Обратный звонок
-                .header-end-attr
-                    .header-user(data-toggle="modal" data-target="#popup-auth")
-                        +icon('user')
-                    .header-cart
-                        +icon('cart')
-    include ../modules/menu
+                .header-middle
+                    .header-info
+                        +icon('clock')
+                        .header-info--text Пн - Вс с 09:00 до 20:00
+                    .header-info
+                        +icon('mail')
+                        a.header-info--text(href="mailto:info@migdex.ru") info@migdex.ru
+                .header-end
+                    .header-tel-wrap
+                        a.header-tel-text(href="tel:+79684060110") +7 (968) 406-01-10
+                        .header-callback Обратный звонок
+                    .header-end-attr
+                        .header-user(data-toggle="modal" data-target="#popup-auth")
+                            +icon('user')
+                        .header-cart
+                            +icon('cart')
+        include ../modules/menu
+    .header-fixed
+        .container
+            .header-wrapper
+                .header-logo.header-start
+                    +logo('logo')
+
+                .header-menu--wrapper
+                    ul.header-menu--list
+                        a.header-menu--item(href="/") Готовые решения
+                        a.header-menu--item(href="/") МАГАЗИН
+                        a.header-menu--item(href="/") УСЛУГИ
+                        a.header-menu--item(href="/") ПОРТФОЛИО
+                        a.header-menu--item(href="/") Поддержка
+                        a.header-menu--item(href="/") ПАРТНЕРАМ
+                        a.header-menu--item(href="/") КОМПАНИЯ
+                .header-end
+                    .header-tel-wrap
+                        a.header-tel-text(href="tel:+79684060110") +7 (968) 406-01-10
+                        .header-callback Обратный звонок
+                    .header-end-attr
+                        .header-user(data-toggle="modal" data-target="#popup-auth")
+                            +icon('user')
+                        .header-cart
+                            +icon('cart')
+
+
 

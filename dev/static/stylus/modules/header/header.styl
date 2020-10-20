@@ -3,13 +3,76 @@
   align-items center
   justify-content space-between
   padding 6px 0
-header
+
+.header-absolute
   position absolute
   top 0
   left 0
   right 0
   width 100%
   z-index 20
+.header-relative .header-absolute
+  position relative
+.header-relative
+  header
+    position relative
+    background-color #2B2F3F
+  .header-absolute
+    .header-menu--wrapper
+      background-color #363949
+.header-fixed
+  position fixed
+  background-color #252939
+  top 0
+  left 0
+  right 0
+  width 100%
+  z-index 20
+  transform translateY(-100vh)
+  //will-change transform
+  transition .6s ease
+  .header-menu--wrapper
+    background transparent
+    backdrop-filter none
+  .header-menu--item
+    margin-right 25px
+  .header-logo
+    margin-right 0
+.header-fixed.active
+  transform translateY(0)
+.header-fixed--list__wrap
+  display none
+  position absolute
+  top 71.7px
+  left -15px
+.header-fixed--list
+  display flex
+  flex-direction column
+  padding 20px
+  width max-content
+  min-width 180px
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  .header-menu--item
+    font-family Os600
+    margin-bottom 20px
+    padding 0
+    margin-right 0
+    &:last-child
+      margin-bottom 0
+.header-fixed-menu--hidden
+  position relative
+  background-color #3E414D
+  size(44px)
+  border-radius 5px
+  display flex
+  justify-content center
+  align-items center
+  cursor pointer
+  .icon
+    size(27px)
+    fill #fff
+
 .header-info
   display flex
   align-items center
@@ -80,7 +143,7 @@ header
 .header-menu--wrapper
   background: rgba(43, 47, 63, 0.7);
   backdrop-filter: blur(20px);
-  will-change transform
+  //will-change transform
 
 
 
