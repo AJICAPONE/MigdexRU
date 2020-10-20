@@ -190,7 +190,24 @@ $(document).ready(function () {
     }).trigger('afterChange');
 
 
-
+    $('.section-seo-reviews').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        prevArrow: '.migdex-seo-review--prev',
+        nextArrow: '.migdex-seo-review--next',
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        rows: 0,
+        infinite: true,
+        appendDots: '.js-seo-dots--wrap',
+        customPaging: function () {
+            return '<a class="js-seo-slider__dots"></a>';
+        },
+        //swipeToSlide: true,
+        // rtl: true,
+        // pauseOnHover: false,
+    });
 
     $("#thumb-slider").on("init", function(event, slick){
         var currentSlide = slick.currentSlide + 1;

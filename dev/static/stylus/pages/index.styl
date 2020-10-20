@@ -11,7 +11,7 @@
   height: 100vh
   background-position: center;
   outline none
-.js-slider-dots--wrap
+.js-slider-dots--wrap,.js-seo-dots--wrap
   position: absolute;
   left: 0;
   right: 0;
@@ -54,6 +54,8 @@
       border-radius: 50%;
       a
         background: linear-gradient(135deg, #f37335, #fdc830);
+.js-seo-dots--wrap
+  bottom -60px
 .slide-main--title
   font-family Ow600
   font-size 54px
@@ -2387,7 +2389,7 @@ li.slick-active .index-video-slider__dots
   width 100%
 .migdex-baner-slider--wrap
   position relative
-.migdex-baner-slider--prev,.migdex-baner-slider--next,.migdex-seo-slider--prev,.migdex-seo-slider--next
+.migdex-baner-slider--prev,.migdex-baner-slider--next,.migdex-seo-slider--prev,.migdex-seo-slider--next,.migdex-seo-review--prev,.migdex-seo-review--next
   display flex
   justify-content center
   align-items center
@@ -2402,11 +2404,11 @@ li.slick-active .index-video-slider__dots
   margin-left -22px
   .icon
     transform rotate(90deg)
-.migdex-seo-slider--prev
+.migdex-seo-slider--prev,.migdex-seo-review--prev
   margin-right 15px
   .icon
     transform rotate(90deg)
-.migdex-seo-slider--next
+.migdex-seo-slider--next,.migdex-seo-review--next
   .icon
     transform rotate(-90deg)
 .migdex-baner-slider--next
@@ -2768,3 +2770,71 @@ li.slick-active .index-video-slider__dots
   font-family Os400
   font-size 13px
   color #AAACB2
+.section-seo-reviews--col
+  outline none
+.section-migdex-seo--nav
+  display flex
+  align-items center
+  position absolute
+  top 0
+  right 0
+  z-index 2
+.info-about-us--title
+  font-family Ow600
+  font-size 42px
+  color #fff
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+  &:after
+    content ''
+    background-image url("/static/img/content/svg/bulav.svg")
+    width: 100px;
+    height: 38px;
+    background-repeat no-repeat
+    background-size contain
+.info-about-us
+  background-color #2B2F3F
+  padding 30px 0
+.info-about-us--desc
+  font-family Os400
+  font-size 14px
+  color #AAACB2
+  text-align center
+.info-about-us--wrap
+  display flex
+.info-about-us--col:nth-child(2)
+  border-right 1px solid rgba(255,255,255,0.1)
+  border-left 1px solid rgba(255,255,255,0.1)
+.info-about-us--col:nth-child(3)
+  border-right 1px solid rgba(255,255,255,0.1)
+.p-40-20
+  padding 40px 20px
+.why-seo-item
+  size(76px)
+  margin 0 auto
+  align-items center
+  margin-bottom 28px
+
+  .section-why--img
+    margin 0
+    size(42px)
+.answer-on-question--item
+  background-color #2B2F3F
+  border-radius 5px
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+.answer-on-question--top
+  display flex
+  align-items center
+.answer-on-question--title
+  font-family Ow400
+  font-size 17px
+  color #fff
+.answer-on-question--dot
+  display block
+  size(11px)
+  box-shadow 0 0 2px 0 rgba(248, 158, 51, 0.6);
+  background: linear-gradient(92.29deg, #F37535 0%, #FDC630 100%);
+  margin-right 15px
+  border-radius 50%
