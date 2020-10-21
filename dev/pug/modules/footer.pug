@@ -2,15 +2,25 @@ footer
     .container
         .footer-wrap
             .col-xl-8.col-lg-8.col-md-8.col-sm-12.footer-left
-                .footer-block
+                .footer-block.footer-block--mobile
                     a.footer-logo(href="/")
                         +logo('footer-logo')
                     .footer-tel
                         +icon('phone')
                         a.footer-tel--link(href="tel:+79684060110") +7 (968) 406-01-10
+                    .migdex-button-wrap
+                        .migdex-callback.migdex-button-block.w-270.mb-25.m-0-auto Обратный звонок
+                    a.footer-download.mb-15(href="/" download)
+                        +icon('pdf')
+                        span Скачать презентацию
                     .footer-email
                         .footer-email--title Email:
                         a.footer-email-email(href="mailto:info@migdex-edu.ru") info@migdex-edu.ru
+                    .footer-links--mobile
+                        a(href="/") ГОТОВЫЕ САЙТЫ
+                        a(href="/") ПОДДЕРЖКА
+                        a(href="/") УСЛУГИ
+                        a(href="/") КОМПАНИЯ
                     .footer-social
                         a.footer-soc-item(href="/")
                             +icon('vk')

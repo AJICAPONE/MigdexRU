@@ -156,9 +156,10 @@
   align-items center
   justify-content space-between
 .wave-slide--item
-  width 470px
+  width 100%
+  max-width 470px
   outline none
-  margin 25px 10px
+  margin 0px 10px
 .section-wave--left,.section-wave--right
   position relative
   width 48%
@@ -345,11 +346,22 @@
   font-size 13px
   color #AAACB2
 .how-job--top
+  position relative
   display flex
   align-items center
-  justify-content space-between
+  //justify-content space-between
   margin-bottom 30px
   width 100%
+  &:after
+    content '0'counter(list)
+    counter-increment list
+    position absolute
+    right 0
+    top -10px
+    font-size 85px
+    font-family Ow600
+    color rgba(255,255,255,0.05)
+    line-height 0.8
 .how-job--col
   display flex
 .how-job-video--link
@@ -362,6 +374,7 @@
   height 100%
 .section-how-job
   margin-bottom 100px
+  counter-reset list
 .how-job-video
   margin 0 auto
 .how-job-video--icon
