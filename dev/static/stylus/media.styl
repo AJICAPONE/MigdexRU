@@ -204,6 +204,33 @@
     margin-bottom 30px
   .p-60-0
     padding 30px 0
+  .section-services-anno
+    display none
+  .section-services--mobile
+    display flex
+  .section-services-block
+    justify-content space-between
+    padding 20px
+  .header-fixed-menu--abs
+    background-color #4A4C55
+    .header-fixed--list__wrap
+      right 0
+      left auto
+      top 51px
+  .section-main-page
+    display none
+  .section-main-page__mobile
+    display block
+  .slide-main-content
+    align-items center
+    margin 0 auto
+  .slide-main--title
+    text-align center
+  .header-menu--wrapper
+    backdrop-filter none
+    background: rgba(43,47,63,0.9);
+  .wave-section
+    margin-bottom 70px
 
 
 @media screen and (max-width: 768px)
@@ -234,6 +261,123 @@
   .header-fixed
     .header-menu--wrapper
       display none
+  .header-middle
+    display none
+  .header-menu--wrapper
+    backdrop-filter none
+  .header-fixed--list__wrap
+    right 0
+    left auto
+    top 52px
+  .header-fixed-menu--hidden
+    background-color #4A4C55
+  .header-menu--wrapper
+    background: rgba(43,47,63,0.9);
+  .slide-main--title
+    text-align center
+  .slide-main-page
+    padding-top 170px
+  .slide-main--title
+    margin-bottom 25px
+  .section-rev-block, .section-blog-block
+    margin 0 -15px
+  .index-video-slider .slick-list
+    margin 0
+    padding-left 6% !important
+    padding-right 6% !important
+  .index-video-slider
+    margin 0 -15px
+  .index-video-slider .slick-current
+    transform scale(1)
+  .index-video-slider--prev
+    margin-left 0
+  .index-video-slider--next
+    margin-right 0
+  .section-title
+    font-size 28px
+  .section-services-img
+    size(52px)
+  .section-services-title
+    font-size 19px
+  .footer-links--mobile
+    display block
+  .footer-block--mobile
+    .migdex-button-wrap
+      display flex
+    .footer-download
+      display block
+  .header-menu--wrapper
+    display none
+  .header-menu--wrapper__mobile
+    display flex
+    justify-content space-between
+    align-items center
+    background: rgba(43, 47, 63, 0.9);
+    backdrop-filter: blur(20px);
+    padding 15px
+    .header-info
+      display flex
+    .header-sandwich
+      cursor pointer
+      .icon
+        size(30px)
+        fill #fff
+  .slide-main--title
+    font-size 30px
+  .slide-main-page
+    padding-top 185px
+  .header-logo .icon
+    size(80px)
+  .header-sandwich--menu
+    position fixed
+    display block
+    left 0
+    top 0
+    bottom 0
+    right 0
+    background: rgba(43, 47, 63, 1);
+    //backdrop-filter: blur(20px);
+    z-index 999
+    transition .4s ease
+    transform translateX(-100vw)
+    will-change transform
+  .header-sandwich--menu__top
+    display flex
+    align-items center
+    justify-content space-between
+    padding 10px 15px
+    border-bottom 1px solid rgba(255,255,255,0.15)
+
+  .header-close--menu
+    margin-left 40px
+    cursor pointer
+    .icon
+      size(23px)
+      fill #fff
+  .header-sandwich--menu.active
+    transform translateX(0)
+  .header-sandwich--menu__bottom
+    display flex
+    flex-direction column
+    justify-content space-between
+    height calc(100vh - 101px)
+    padding-bottom 30px
+  .header-sandwich--menu__list
+    display flex
+    flex-direction column
+    align-items center
+    overflow-y auto
+    height 100%
+    padding 30px
+    a
+      font-family Os600
+      font-size 15px
+      color #fff
+      margin-bottom 30px
+      text-transform uppercase
+      &:last-child
+        margin-bottom 0
+
 
 
 

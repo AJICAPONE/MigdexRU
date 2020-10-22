@@ -22,6 +22,13 @@ header
                         .header-cart
                             +icon('cart')
         include ../modules/menu
+        .header-menu--wrapper__mobile
+            .header-info
+                +icon('mail')
+                a.header-info--text(href="mailto:info@migdex.ru") info@migdex.ru
+            .header-sandwich
+                +icon('sandwich')
+
     .header-fixed
         .container
             .header-wrapper
@@ -37,6 +44,7 @@ header
                         a.header-menu--item(href="/") Поддержка
                         a.header-menu--item(href="/") ПАРТНЕРАМ
                         a.header-menu--item(href="/") КОМПАНИЯ
+
                 .header-end
                     .header-tel-wrap
                         a.header-tel-text(href="tel:+79684060110") +7 (968) 406-01-10
@@ -48,4 +56,32 @@ header
                             +icon('cart')
 
 
+
+    .header-sandwich--menu
+        .header-sandwich--menu__top
+            .header-logo.header-start
+                +logo('logo')
+            .header-end-attr
+                .header-user(data-toggle="modal" data-target="#popup-auth")
+                    +icon('user')
+                .header-cart
+                    +icon('cart')
+                .header-close--menu
+                    +icon('close')
+        .header-sandwich--menu__bottom
+            ul.header-sandwich--menu__list
+                a(href="/") Готовые решения
+                a(href="/") Магазин
+                a(href="/") Услуги
+                a(href="/") Портфолио
+                a(href="/") Поддержка
+                a(href="/") Партнерам
+                a(href="/") Компания
+            .footer-social
+                a.footer-soc-item(href="/")
+                    +icon('vk')
+                a.footer-soc-item(href="/")
+                    +icon('fb')
+                a.footer-soc-item(href="/")
+                    +icon('yt')
 

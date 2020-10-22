@@ -18,6 +18,7 @@ $(document).ready(function () {
 
     var ss1 = function() {
         var count_divs = $('.header-fixed .header-menu--item');
+        var count_divs2 = $('.header-absolute .header-menu--item');
         if ($(window).width() > 1199) {
             if (count_divs.length > 5){
                 count_divs.slice(5).wrapAll('<div class="header-fixed-menu--hidden">' +
@@ -54,7 +55,18 @@ $(document).ready(function () {
                     '</svg>' +
                     +'</div>');
             }
-        }else if ($(window).width() > 575) {
+            if (count_divs2.length > 5){
+                count_divs2.slice(5).wrapAll('<div class="header-fixed-menu--hidden header-fixed-menu--abs">' +
+                    '<div class="header-fixed--list__wrap">'+
+                    '<ul class="header-fixed--list">' +
+
+                    '</ul></div>' +
+                    '<svg class="icon icon-dots ">' +
+                    '<use xlink:href="static/img/svg/symbol/sprite.svg#dots"></use>'+
+                    '</svg>' +
+                    +'</div>');
+            }
+        } else if ($(window).width() > 575) {
             if (count_divs.length > 1){
                 count_divs.slice(1).wrapAll('<div class="header-fixed-menu--hidden">' +
                     '<div class="header-fixed--list__wrap">'+
@@ -135,10 +147,10 @@ $(document).ready(function () {
             return '<a class="index-video-slider__dots"></a>';
         },
         responsive: [
-            {
-                breakpoint: 576,
-                settings: "unslick",
-            },
+            // {
+            //     breakpoint: 576,
+            //     settings: "unslick",
+            // },
             {
                 breakpoint: 768,
                 settings: {
@@ -150,32 +162,6 @@ $(document).ready(function () {
         /*infinite: false,*/
     });
 
-
-    $('.index-video-slider-mobile').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        prevArrow: '.mobile-video-slider--prev',
-        nextArrow: '.mobile-video-slider--next',
-        //dots: true,
-        //appendDots: '.mobile-video-dots--wrap',
-        //variableWidth: true,
-        rows: 0,
-        // variableWidth: true,
-        // centerMode: true,
-        customPaging: function () {
-            return '<a class="js-index-slider__dots"></a>';
-        },
-        responsive: [
-            {
-                breakpoint: 576,
-                settings: {
-
-                }
-            },
-
-        ]
-
-    });
 
     $('.js-main-page-slider').slick({
         slidesToShow: 1,
@@ -201,6 +187,18 @@ $(document).ready(function () {
         //     },
         //
         // ]
+    });
+    $('.js-main-page-slider__mobile').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        appendDots: '.js-slider-dots--wrap__mobile',
+        rows: 0,
+        customPaging: function () {
+            return '<a class="js-slider__dots"></a>';
+        },
+
     });
 
     $('.migdex-baner-slider').slick({
@@ -458,6 +456,33 @@ $(document).ready(function () {
                     slidesToShow: 2,
                     arrows:false,
                     dots: false,
+                }
+            },
+
+        ]
+    });
+
+    $('.section-services').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        rows: 0,
+        // customPaging: function () {
+        //     return '<a class="js-slider__dots"></a>';
+        // },
+        responsive: [
+            {
+                breakpoint: 9999,
+                settings: 'unslick',
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToScroll: 1,
+                    slidesToShow: 1,
+                    arrows:false,
+                    dots: false,
+                    centerMode: true,
+
                 }
             },
 
@@ -1253,6 +1278,16 @@ $(document).ready(function () {
        var get_tab = $(this).attr('data-tab');
        $(this).addClass('active').siblings().removeClass('active');
        $('.migdex-seo-settings--tabs .' + get_tab).addClass('active').siblings().removeClass('active')
+    });
+
+    $('.header-sandwich').click(function () {
+        $('.header-sandwich--menu').addClass('active');
+        $('body').attr('style','overflow:hidden');
+    });
+
+    $('.header-close--menu').click(function () {
+       $('.header-sandwich--menu').removeClass('active');
+       $('body').attr('style','overflow:auto');
     });
 
 
