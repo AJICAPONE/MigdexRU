@@ -142,9 +142,11 @@ $(document).ready(function () {
         swipe: true,
         variableWidth: true,
         rows: 0,
+        appendDots: '.js-video-dots--wrap',
+        dots: false,
         useTransform: true,
         customPaging: function (slider, i) {
-            return '<a class="index-video-slider__dots"></a>';
+            return '<a class="js-index-slider__dots"></a>';
         },
         responsive: [
             // {
@@ -152,9 +154,11 @@ $(document).ready(function () {
             //     settings: "unslick",
             // },
             {
-                breakpoint: 768,
+                breakpoint: 767,
                 settings: {
                     variableWidth: false,
+                    dots: true,
+
                 }
             },
 
@@ -416,9 +420,10 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         rows: 0,
-        // customPaging: function () {
-        //     return '<a class="js-slider__dots"></a>';
-        // },
+        appendDots: '.js-rev-dots--wrap',
+        customPaging: function () {
+            return '<a class="js-slider__dots"></a>';
+        },
         responsive: [
             {
                 breakpoint: 9999,
@@ -431,6 +436,15 @@ $(document).ready(function () {
                     slidesToShow: 2,
                     arrows:false,
                     dots: false,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToScroll: 1,
+                    slidesToShow: 1,
+                    arrows:false,
+                    dots: true,
                 }
             },
 
@@ -458,6 +472,16 @@ $(document).ready(function () {
                     dots: false,
                 }
             },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToScroll: 1,
+                    slidesToShow: 1,
+                    arrows:false,
+                    dots: false,
+                }
+            },
+
 
         ]
     });
@@ -466,9 +490,10 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         rows: 0,
-        // customPaging: function () {
-        //     return '<a class="js-slider__dots"></a>';
-        // },
+        appendDots: '.js-services-dots--wrap',
+        customPaging: function () {
+            return '<a class="js-services-slider__dots"></a>';
+        },
         responsive: [
             {
                 breakpoint: 9999,
@@ -480,8 +505,64 @@ $(document).ready(function () {
                     slidesToScroll: 1,
                     slidesToShow: 1,
                     arrows:false,
-                    dots: false,
+                    dots: true,
+                    //centerMode: true,
+                    infinite: false,
+
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToScroll: 1,
+                    slidesToShow: 1,
+                    arrows:false,
+                    dots: true,
+                    centerPadding: '15px',
                     centerMode: true,
+                    infinite: false,
+
+                }
+            },
+
+        ]
+    });
+    $('.section-how-job').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        rows: 0,
+        appendDots: '.js-how-dots--wrap',
+        customPaging: function () {
+            return '<a class="js-how-slider__dots"></a>';
+        },
+        responsive: [
+            {
+                breakpoint: 9999,
+                settings: 'unslick',
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToScroll: 1,
+                    slidesToShow: 1,
+                    arrows:false,
+                    dots: true,
+
+                    //centerMode: true,
+                    infinite: false,
+
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToScroll: 1,
+                    slidesToShow: 1,
+                    arrows:false,
+                    dots: true,
+                    centerPadding: '15px',
+                    centerMode: true,
+                    infinite: false,
 
                 }
             },
@@ -1280,7 +1361,7 @@ $(document).ready(function () {
        $('.migdex-seo-settings--tabs .' + get_tab).addClass('active').siblings().removeClass('active')
     });
 
-    $('.header-sandwich').click(function () {
+    $('.header-sandwich,.header-fixed-sandwich').click(function () {
         $('.header-sandwich--menu').addClass('active');
         $('body').attr('style','overflow:hidden');
     });
