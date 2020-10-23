@@ -1088,37 +1088,45 @@ li.slick-active .index-video-slider__dots
   align-items center
   justify-content space-between
   width 100%
-.section-template-content--item
-  position relative
+.section-template-content--item__wrap
   display flex
-  justify-content center
-  z-index 1
-
-
+  flex-direction column
+  position relative
   &:nth-child(2)
     margin-top 50px
-    .section-template-content--img
-      margin-bottom 20px
     &:before
       content ''
       position absolute
       background-image url("/static/img/content/pun.png")
       background-size cover
       background-repeat no-repeat
-      width: 280px;
+      width: 250px;
       height: 64px;
       right: 0;
-      transform: translate(-108px, 3px);
+      transform: translate(-205px, 3px);
     &:after
       content ''
       position absolute
       background-image url("/static/img/content/pun.png")
       background-size cover
       background-repeat no-repeat
-      width: 280px;
+      width: 250px;
       height: 64px;
       left: 0;
-      transform: translate(111px, 8px) rotate(-7deg);
+      transform: translate(211px, 8px) rotate(-7deg);
+.section-template-content--item__bot
+  display flex
+  flex-direction column
+  align-items center
+.section-template-content--item
+  position relative
+  display flex
+  justify-content center
+  z-index 1
+  margin-bottom 30px
+
+
+
 .section-template-content--img
   display flex
   justify-content center
@@ -1153,7 +1161,7 @@ li.slick-active .index-video-slider__dots
 .section-template-content--desc
   color #A5A7AE
   font-family Os400
-  font-size 14px
+  font-size 13px
   text-align center
   &:nth-child(2)
     padding 0 20px
