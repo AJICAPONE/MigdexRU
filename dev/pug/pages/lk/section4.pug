@@ -6,8 +6,18 @@ section.section1.p-60-0.pt-2
                 include sidebar/sidebar
 
 
-                .col-xl-9.col-lg-9.col-md-6.col-sm-12.migdex-lk-content.pr-0
-                    .migdex-lk-content--box__v2.blue-box.mb-25
+                .col-xl-9.col-lg-9.col-md-12.col-sm-12.migdex-lk-content.pr-0
+                    .migdex-lk-nav--mobile.blue-box.justify-content-between
+                        a.migdex-lk-nav--left(href="/")
+                            .migdex-lk-nav--mobile__icon
+                                +icon('arrow-down')
+                            .migdex-lk-nav--mobile__name Профиль
+                        .migdex-lk-nav--right
+                            .migdex-lk-nav--list
+                                +icon('sort')
+                            .migdex-lk-nav--filter(data-toggle="modal" data-target="#popup-filter")
+                                +icon('filter')
+                    .migdex-lk-content--box__v2.blue-box.mb-25.migdex-lk-desc--filter
                         .migdex-lk-content--box__top
                             .migdex-lk-content--box__top--title Фильтр
                             .migdex-lk-content--box__top--arrow
@@ -45,12 +55,12 @@ section.section1.p-60-0.pt-2
                             .migdex-popup-input--col.w-66.p-0-15px
                                 label Дата:
                                 .migdex-popup-input-cols--flex
-                                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.migdex-popup-input.mb-0
+                                    .col-xl-6.col-lg-6.col-md-6.col-sm-6.migdex-popup-input.mb-0
                                         input.migdex-input--v2.h-47.date-start(type="text" placeholder="__.__.____")
                                         .migdex-popup-input__icon
                                             +icon('calendar')
                                     .migdex-tire -
-                                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.migdex-popup-input.mb-0
+                                    .col-xl-6.col-lg-6.col-md-6.col-sm-6.migdex-popup-input.mb-0
                                         input.migdex-input--v2.h-47.date-end(type="text" placeholder="__.__.____")
                                         .migdex-popup-input__icon
                                             +icon('calendar')

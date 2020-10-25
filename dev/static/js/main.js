@@ -31,7 +31,7 @@ $(document).ready(function () {
                     '</svg>' +
                     +'</div>');
             }
-        } else if ($(window).width() > 991) {
+        } else if ($(window).width() > 992) {
             if (count_divs.length > 4){
                 count_divs.slice(4).wrapAll('<div class="header-fixed-menu--hidden">' +
                     '<div class="header-fixed--list__wrap">'+
@@ -43,7 +43,7 @@ $(document).ready(function () {
                     '</svg>' +
                     +'</div>');
             }
-        } else if ($(window).width() > 767) {
+        } else if ($(window).width() > 768) {
             if (count_divs.length > 2){
                 count_divs.slice(2).wrapAll('<div class="header-fixed-menu--hidden">' +
                     '<div class="header-fixed--list__wrap">'+
@@ -66,7 +66,7 @@ $(document).ready(function () {
                     '</svg>' +
                     +'</div>');
             }
-        } else if ($(window).width() > 575) {
+        } else if ($(window).width() > 576) {
             if (count_divs.length > 1){
                 count_divs.slice(1).wrapAll('<div class="header-fixed-menu--hidden">' +
                     '<div class="header-fixed--list__wrap">'+
@@ -154,7 +154,7 @@ $(document).ready(function () {
             //     settings: "unslick",
             // },
             {
-                breakpoint: 767,
+                breakpoint: 768,
                 settings: {
                     variableWidth: false,
                     dots: true,
@@ -430,7 +430,7 @@ $(document).ready(function () {
                 settings: 'unslick',
             },
             {
-                breakpoint: 991,
+                breakpoint: 992,
                 settings: {
                     slidesToScroll: 1,
                     slidesToShow: 2,
@@ -439,7 +439,7 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 767,
+                breakpoint: 768,
                 settings: {
                     slidesToScroll: 1,
                     slidesToShow: 1,
@@ -464,7 +464,7 @@ $(document).ready(function () {
                 settings: 'unslick',
             },
             {
-                breakpoint: 991,
+                breakpoint: 992,
                 settings: {
                     slidesToScroll: 1,
                     slidesToShow: 2,
@@ -473,7 +473,7 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 575,
+                breakpoint: 576,
                 settings: {
                     slidesToScroll: 1,
                     slidesToShow: 1,
@@ -500,7 +500,7 @@ $(document).ready(function () {
                 settings: 'unslick',
             },
             {
-                breakpoint: 767,
+                breakpoint: 768,
                 settings: {
                     slidesToScroll: 1,
                     slidesToShow: 1,
@@ -512,7 +512,7 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 575,
+                breakpoint: 576,
                 settings: {
                     slidesToScroll: 1,
                     slidesToShow: 1,
@@ -541,7 +541,7 @@ $(document).ready(function () {
                 settings: 'unslick',
             },
             {
-                breakpoint: 767,
+                breakpoint: 768,
                 settings: {
                     slidesToScroll: 1,
                     slidesToShow: 1,
@@ -554,7 +554,7 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 575,
+                breakpoint: 576,
                 settings: {
                     slidesToScroll: 1,
                     slidesToShow: 1,
@@ -816,6 +816,7 @@ $(document).ready(function () {
             highlightedClass: 'today-day-gogocar',
             zIndex: 1050,
             startView: 0,
+            offset: -300,
             // startDate: function (date) {
             //     //date.valueOf(getDate() - 1);
             //     date.valueOf() < now - 1 ? true : false;
@@ -838,6 +839,7 @@ $(document).ready(function () {
             highlightedClass: 'today-day-gogocar',
             zIndex: 1050,
             startView: 0,
+            offset: -300,
             // startDate: function(date){
             //     date.valueOf() < now ? true : false;
             // },

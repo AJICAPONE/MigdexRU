@@ -1,0 +1,52 @@
+#popup-filter.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered(role='document')
+        .modal-content
+            .popup-close--wrap
+                .popup-close(data-dismiss='modal' aria-label='Close')
+                    +icon('close')
+            .popup-header
+                .popup-title Фильтр
+
+
+            .popup-body
+                .col-xl-6.col-lg-6.col-md-6.col-sm-12.migdex-popup-input--col
+                    .migdex-popup-input
+                        label Номер:
+                        input.migdex-input--v2.h-47(type="text" placeholder="Номер...")
+                .col-xl-6.col-lg-6.col-md-6.col-sm-12.migdex-popup-input--col.mb-20
+                    .migdex-popup-input
+                        label Статус:
+                        .migdex-popup-input--flex
+                            .migdex-input--div.migdex-input--v2.h-47
+                                span.migdex-input--div__span Все
+                            .migdex-input-list--icon
+                                +icon('arrow-down')
+                            ul.migdex-input-list--wrap
+                                li.migdex-input-item--input Все1
+                                li.migdex-input-item--input Все2
+                                li.migdex-input-item--input Все3
+                .col-xl-4.col-lg-4.col-md-4.col-sm-12.migdex-popup-input--col
+                    .migdex-popup-input
+                        label Интервал:
+                        .migdex-popup-input--flex
+                            .migdex-input--div.migdex-input--v2.h-47
+                                span.migdex-input--div__span День
+                            .migdex-input-list--icon
+                                +icon('arrow-down')
+                            ul.migdex-input-list--wrap
+                                li.migdex-input-item--input.calendar-destroy День
+                                li.migdex-input-item--input.calendar-destroy Месяц
+                                li.migdex-input-item--input.calendar-destroy Год
+
+                .migdex-popup-input--col.w-66.p-0-15px
+                    label Дата:
+                    .migdex-popup-input-cols--flex
+                        .col-xl-6.col-lg-6.col-md-6.col-sm-6.migdex-popup-input.mb-0.migdex-popup--start
+                            input.migdex-input--v2.h-47.date-start(type="text" placeholder="__.__.____")
+                            .migdex-popup-input__icon
+                                +icon('calendar')
+                        .migdex-tire -
+                        .col-xl-6.col-lg-6.col-md-6.col-sm-6.migdex-popup-input.mb-0.migdex-popup--end
+                            input.migdex-input--v2.h-47.date-end(type="text" placeholder="__.__.____")
+                            .migdex-popup-input__icon
+                                +icon('calendar')
