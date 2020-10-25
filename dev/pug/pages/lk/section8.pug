@@ -8,72 +8,104 @@ section.section1.p-60-0.pt-2
 
                 .col-xl-9.col-lg-9.col-md-12.col-sm-12.migdex-lk-content.pr-0
 
-
+                    a.migdex-lk-nav--mobile.blue-box(href="/")
+                        .migdex-lk-nav--mobile__icon
+                            +icon('arrow-down')
+                        .migdex-lk-nav--mobile__name История заказов
                     .migdex-lk-content--box.blue-box
 
                         .migdex-lk-content--box__bottom2.border-none.p-0
                             .migdex-lk-content--box__top--title.fs-20.mb-30 Завершенные заказов
-                            table.migdex-lk-content--table
-                                thead
-                                    tr
-                                        th № заказа
-                                        th Тип продукта
-                                        th Дата
-                                        th
-                                tbody
-                                    tr
-                                        td Заказ №4
-                                        td Интернет-магазин “MigdexShop”
-                                        td 03.03.2020
-                                        td.migdex-lk-table--arrow
-                                            .migdex-lk-content--box__top--arrow
-                                                +icon('arrow-down')
-                                    tr
-                                        td Заказ №4
-                                        td Интернет-магазин “MigdexShop”
-                                        td 03.03.2020
-                                        td.migdex-lk-table--arrow
-                                            .migdex-lk-content--box__top--arrow
-                                                +icon('arrow-down')
-                                    tr
-                                        td Заказ №4
-                                        td Интернет-магазин “MigdexShop”
-                                        td 03.03.2020
-                                        td.migdex-lk-table--arrow
-                                            .migdex-lk-content--box__top--arrow
-                                                +icon('arrow-down')
-                                    tr
-                                        td Заказ №4
-                                        td Интернет-магазин “MigdexShop”
-                                        td 03.03.2020
-                                        td.migdex-lk-table--arrow
-                                            .migdex-lk-content--box__top--arrow
-                                                +icon('arrow-down')
-                                    tr
-                                        td Заказ №4
-                                        td Интернет-магазин “MigdexShop”
-                                        td 03.03.2020
-                                        td.migdex-lk-table--arrow
-                                            .migdex-lk-content--box__top--arrow
-                                                +icon('arrow-down')
-                                    tr
-                                        td Заказ №4
-                                        td Интернет-магазин “MigdexShop”
-                                        td 03.03.2020
-                                        td.migdex-lk-table--arrow
-                                            .migdex-lk-content--box__top--arrow
-                                                +icon('arrow-down')
-                                    tr
-                                        td Заказ №4
-                                        td Интернет-магазин “MigdexShop”
-                                        td 03.03.2020
-                                        td.migdex-lk-table--arrow
-                                            .migdex-lk-content--box__top--arrow
-                                                +icon('arrow-down')
-                                    tr
-                                        td Заказ №4
-                                        td Интернет-магазин “MigdexShop”
-                                        td 03.03.2020
-                                        td.migdex-lk-table--arrow
-                                            .migdex-lk-content--box__top--arrow
-                                                +icon('arrow-down')
+                            .migdex-lk-content--mat--top
+                                .migdex-lk-content--mat--top__item.w-20 № заказа
+                                .migdex-lk-content--mat--top__item.w-50 Тип продукта
+                                .migdex-lk-content--mat--top__item.w-20 Дата
+                                .migdex-lk-content--mat--top__item.w-10
+                            .migdex-lk-content-mat--item__wrap
+                                .migdex-lk-content-mat--item
+                                    span.w-20 Заказ №4
+                                    span.w-50.w-name Интернет-магазин “MigdexShop”
+                                    span.w-20.w-date 03.03.2020
+                                    .w-10
+                                        .migdex-lk-content--box__top--arrow
+                                            +icon('arrow-down')
+                                .migdex-lk-content-mat--item__content
+                                    .migdex-lk-content-mat--item__content--wrap
+                                        a.migdex-lk-content-mat--item__block(href="/" download)
+                                            .migdex-lk-content-mat--item__icon
+                                                +icon('pdf')
+                                            .migdex-lk-content-mat--item__name Счет-фактура.pdf
+                                            .migdex-lk-content-mat--item__icon__dow
+                                                +icon('download')
+                                        a.migdex-lk-content-mat--item__block(href="/" download)
+                                            .migdex-lk-content-mat--item__icon
+                                                +icon('docs2')
+                                            .migdex-lk-content-mat--item__name Акт на лицензию
+                                            .migdex-lk-content-mat--item__icon__dow
+                                                +icon('download')
+                            .migdex-lk-content-mat--item__wrap
+                                .migdex-lk-content-mat--item
+                                    span.w-20 Заказ №4
+                                    span.w-50.w-name Интернет-магазин “MigdexShop”
+                                    span.w-20.w-date 03.03.2020
+                                    .w-10
+                                        .migdex-lk-content--box__top--arrow
+                                            +icon('arrow-down')
+                                .migdex-lk-content-mat--item__content
+                                    .migdex-lk-content-mat--item__content--wrap
+                                        a.migdex-lk-content-mat--item__block(href="/" download)
+                                            .migdex-lk-content-mat--item__icon
+                                                +icon('pdf')
+                                            .migdex-lk-content-mat--item__name Счет-фактура.pdf
+                                            .migdex-lk-content-mat--item__icon__dow
+                                                +icon('download')
+                                        a.migdex-lk-content-mat--item__block(href="/" download)
+                                            .migdex-lk-content-mat--item__icon
+                                                +icon('docs2')
+                                            .migdex-lk-content-mat--item__name Акт на лицензию
+                                            .migdex-lk-content-mat--item__icon__dow
+                                                +icon('download')
+                            .migdex-lk-content-mat--item__wrap
+                                .migdex-lk-content-mat--item
+                                    span.w-20 Заказ №4
+                                    span.w-50.w-name Интернет-магазин “MigdexShop”
+                                    span.w-20.w-date 03.03.2020
+                                    .w-10
+                                        .migdex-lk-content--box__top--arrow
+                                            +icon('arrow-down')
+                                .migdex-lk-content-mat--item__content
+                                    .migdex-lk-content-mat--item__content--wrap
+                                        a.migdex-lk-content-mat--item__block(href="/" download)
+                                            .migdex-lk-content-mat--item__icon
+                                                +icon('pdf')
+                                            .migdex-lk-content-mat--item__name Счет-фактура.pdf
+                                            .migdex-lk-content-mat--item__icon__dow
+                                                +icon('download')
+                                        a.migdex-lk-content-mat--item__block(href="/" download)
+                                            .migdex-lk-content-mat--item__icon
+                                                +icon('docs2')
+                                            .migdex-lk-content-mat--item__name Акт на лицензию
+                                            .migdex-lk-content-mat--item__icon__dow
+                                                +icon('download')
+                            .migdex-lk-content-mat--item__wrap
+                                .migdex-lk-content-mat--item
+                                    span.w-20 Заказ №4
+                                    span.w-50.w-name Интернет-магазин “MigdexShop”
+                                    span.w-20.w-date 03.03.2020
+                                    .w-10
+                                        .migdex-lk-content--box__top--arrow
+                                            +icon('arrow-down')
+                                .migdex-lk-content-mat--item__content
+                                    .migdex-lk-content-mat--item__content--wrap
+                                        a.migdex-lk-content-mat--item__block(href="/" download)
+                                            .migdex-lk-content-mat--item__icon
+                                                +icon('pdf')
+                                            .migdex-lk-content-mat--item__name Счет-фактура.pdf
+                                            .migdex-lk-content-mat--item__icon__dow
+                                                +icon('download')
+                                        a.migdex-lk-content-mat--item__block(href="/" download)
+                                            .migdex-lk-content-mat--item__icon
+                                                +icon('docs2')
+                                            .migdex-lk-content-mat--item__name Акт на лицензию
+                                            .migdex-lk-content-mat--item__icon__dow
+                                                +icon('download')
