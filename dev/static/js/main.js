@@ -214,6 +214,23 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 2000,
         rows: 0,
+        responsive: [
+            {
+                breakpoint: 1199,
+                settings: {
+                    slidesToScroll: 1,
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToScroll: 1,
+                    slidesToShow: 2,
+                }
+            },
+
+        ]
     });
     $('#seo-left').slick({
         slidesToShow: 1,
