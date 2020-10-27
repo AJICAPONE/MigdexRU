@@ -229,6 +229,13 @@ $(document).ready(function () {
                     slidesToShow: 2,
                 }
             },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToScroll: 1,
+                    slidesToShow: 1,
+                }
+            },
 
         ]
     });
@@ -312,10 +319,47 @@ $(document).ready(function () {
         customPaging: function () {
             return '<a class="js-seo-slider__dots"></a>';
         },
-        //swipeToSlide: true,
-        // rtl: true,
-        // pauseOnHover: false,
+        responsive: [
+
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToScroll: 1,
+                    slidesToShow: 1,
+                }
+            },
+
+        ]
     });
+    $('.migdex-seo-wrap').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        rows: 0,
+        centerMode: true,
+        infinite: false,
+        centerPadding: '15px',
+        appendDots: '.js-rev-dots--wrap',
+        customPaging: function () {
+            return '<a class="js-slider__dots"></a>';
+        },
+        responsive: [
+            {
+                breakpoint: 9999,
+                settings: 'unslick',
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToScroll: 1,
+                    slidesToShow: 1,
+                    arrows:false,
+                    dots: true,
+                }
+            },
+
+        ]
+    });
+
 
     $("#thumb-slider").on("init", function(event, slick){
         var currentSlide = slick.currentSlide + 1;
