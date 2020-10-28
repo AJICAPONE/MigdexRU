@@ -315,9 +315,9 @@ $(document).ready(function () {
         autoplaySpeed: 5000,
         rows: 0,
         infinite: true,
-        appendDots: '.js-seo-dots--wrap',
+        appendDots: '.js-seo-dots--2--wrap',
         customPaging: function () {
-            return '<a class="js-seo-slider__dots"></a>';
+            return '<a class="js-seo-slider3__dots"></a>';
         },
         responsive: [
 
@@ -331,16 +331,45 @@ $(document).ready(function () {
 
         ]
     });
-    $('.migdex-seo-wrap').slick({
+    $('#migdex-seo1').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         rows: 0,
         centerMode: true,
         infinite: false,
         centerPadding: '15px',
-        appendDots: '.js-rev-dots--wrap',
+        appendDots: '.js-seo-dots--1--wrap',
         customPaging: function () {
-            return '<a class="js-slider__dots"></a>';
+            return '<a class="js-slider1__dots"></a>';
+        },
+        responsive: [
+            {
+                breakpoint: 9999,
+                settings: 'unslick',
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToScroll: 1,
+                    slidesToShow: 1,
+                    arrows:false,
+                    dots: true,
+                }
+            },
+
+        ]
+    });
+
+    $('#migdex-seo2').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        rows: 0,
+        centerMode: true,
+        infinite: false,
+        centerPadding: '15px',
+        appendDots: '.js-seo-dots--2',
+        customPaging: function () {
+            return '<a class="js-slider2"></a>';
         },
         responsive: [
             {
