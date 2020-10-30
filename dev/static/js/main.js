@@ -758,7 +758,9 @@ $(document).ready(function () {
     });
 
     $('.migdex-people-count span').click(function () {
+       var dataPrice = $(this).attr('data-price');
        $(this).addClass('active').siblings().removeClass('active')
+       $(this).parents('.migdex-products--info__flex--top').children('.migdex-products-card--price').text(dataPrice);
     });
 
     $(function () {
